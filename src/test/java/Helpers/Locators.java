@@ -1,9 +1,17 @@
 package Helpers;
 
+import com.relevantcodes.extentreports.ExtentReports;
+
 import java.util.Arrays;
 import java.util.HashSet;
 
 public class Locators extends Settings {
+
+    //EXTENT REPORT
+    //Create report file
+
+
+
 
     //LINKS
     public static final String LoginPage = "http://test-case.vats.atwinta.ru/login/";
@@ -13,6 +21,7 @@ public class Locators extends Settings {
     //DATA
     public static final String Login = "director@test-case-company.com";
     public static final String Password = "password";
+    public static final String replacement = "_test";
 
 
 

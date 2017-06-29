@@ -4,6 +4,9 @@ import com.galenframework.api.Galen;
 import com.galenframework.reports.GalenTestInfo;
 import com.galenframework.reports.HtmlReportBuilder;
 import com.galenframework.reports.model.LayoutReport;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -20,7 +23,9 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Pattern;
 
+import static Helpers.Locators.replacement;
 import static Helpers.Locators.title_x_margin_from_top;
 import static Helpers.Settings.browser;
 
@@ -66,6 +71,13 @@ public class PageElement {
         return error_status;
     }
 */
+
+    private static String getMethodName(){
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        String methodName = stackTraceElements[2].getMethodName();
+
+        return methodName;
+    }
 
 
     public static boolean MaterialDateAdd(String element_) {
@@ -211,11 +223,21 @@ public class PageElement {
 
 
     public static boolean LoadPage(String pageURL) {
+
+        String extentReportFile = System.getProperty("user.dir") + "\\extentReportFile.html";
+        String extentReportImage = System.getProperty("user.dir") + "\\extentReportFile.png";
+
+        String testSuiteName = getMethodName();
+
+        System.out.println(testSuiteName + ". ");
+        ExtentReports extent = new ExtentReports(extentReportFile, false);
+        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - " + pageURL);
+
         boolean error_status = true;
         long start = 0;
 
-        System.out.println("Trying to open: " + pageURL);
-
+        System.out.println("Trying to open - " + pageURL);
+        extentTest.log(LogStatus.INFO, "Trying to open - " + pageURL);
         try {
             start = System.currentTimeMillis(); // Start timer.
             browser.get(pageURL);
@@ -223,10 +245,17 @@ public class PageElement {
             e.printStackTrace();
             error_status = false;
             System.out.println("Page cannot be opened.");
+            extentTest.log(LogStatus.FAIL, "Page cannot be opened.\n\nStackTrace:\n");
         }
 
         long finish = System.currentTimeMillis(); // Stop timer.
         long totalTime = finish - start;
+
+        if (totalTime/1000 > 10) {
+            System.out.println("Warning! Page load time, is too long");
+            extentTest.log(LogStatus.WARNING, "Page loading is critical.", "Load time = " + totalTime);
+        } else extentTest.log(LogStatus.INFO, "Load time = " + totalTime);
+
         System.out.println("Total Time for page load - " + totalTime);
 
         try {
@@ -235,12 +264,10 @@ public class PageElement {
             e.printStackTrace();
         }
 
-        Logs logs = browser.manage().logs();
-        LogEntries logEntries = logs.get(LogType.DRIVER);
+        if (error_status) extentTest.log(LogStatus.PASS, "Page loaded is loaded");
 
-        for (LogEntry logEntry : logEntries) {
-            System.out.println(logEntry.getMessage());
-        }
+        extent.endTest(extentTest);
+        extent.flush();
 
         return error_status;
     }

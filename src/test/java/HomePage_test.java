@@ -40,6 +40,8 @@ import static Helpers.PageElement.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class HomePage_test extends Settings {
 
+    protected static String testSuite_1 = "LoginPage . ";
+
 
     @BeforeClass
     public static void setUp() throws Exception {
@@ -50,23 +52,14 @@ public class HomePage_test extends Settings {
 
 
     @Test
-    public void a_test() throws Exception {
-        LoadPage(LoginPage);
-
-        //Check("loginpage");
-    }
-
-
-
-    @Test
     public void b_log_in_test() throws Exception {
         LoadPage(LoginPage);
 
-        SendKeys(EmailInput, Login);
-        SendKeys(PasswordInput, Password);
-        Click(LoginButton);
+//        SendKeys(EmailInput, Login);
+//        SendKeys(PasswordInput, Password);
+//        Click(LoginButton);
 
-        IsDisplayed(EmployersTitleH1);
+//        IsDisplayed(EmployersTitleH1);
     }
 
 
