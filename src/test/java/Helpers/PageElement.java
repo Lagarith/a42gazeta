@@ -273,17 +273,11 @@ public class PageElement {
 
 
     public static boolean LoadPage(String pageURL, String expected) {
-        boolean error_status = false;
+        browser.get(pageURL);
 
-        String testSuiteName = getMethodName();
+        if(IsDisplayed(expected)) return true;
+        else return false;
 
-        System.out.println(testSuiteName + ". ");
-        ExtentReports extent = new ExtentReports(extentReportFile, false);
-        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - " + pageURL);
-
-
-
-        return error_status;
     }
 
 

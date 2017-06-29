@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/PageElement.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/PageElement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
@@ -72,8 +75,8 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="279" column="49" lean-forward="true" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="49" />
+            <state relative-caret-position="385">
+              <caret line="281" column="0" lean-forward="true" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -1271,14 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="917">
@@ -1302,10 +1297,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="279" column="49" lean-forward="true" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="49" />
+        <state relative-caret-position="385">
+          <caret line="281" column="0" lean-forward="true" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
