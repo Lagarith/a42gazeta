@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/PageElement.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/PageElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
     </list>
@@ -75,22 +70,25 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="281" column="0" lean-forward="true" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+            <state relative-caret-position="365">
+              <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
+                <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
                 <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
                 <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
                 <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
                 <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
                 <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
                 <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-                <element signature="method#Click#0;class#PageElement#0" expanded="false" />
+                <element signature="e#5474#5475#0" expanded="true" />
+                <element signature="e#5516#5517#0" expanded="true" />
                 <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
                 <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
                 <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+                <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
                 <element signature="method#Check#0;class#PageElement#0" expanded="false" />
                 <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
                 <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -103,8 +101,8 @@
       <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            <state relative-caret-position="213">
+              <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -814,17 +812,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
+            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
+            <element signature="e#5474#5475#0" expanded="true" />
+            <element signature="e#5516#5517#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -887,17 +888,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
+            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
+            <element signature="e#5474#5475#0" expanded="true" />
+            <element signature="e#5516#5517#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -960,17 +964,20 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
+            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
+            <element signature="e#5474#5475#0" expanded="true" />
+            <element signature="e#5516#5517#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -1289,14 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1305,24 +1304,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="281" column="0" lean-forward="true" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+        <state relative-caret-position="365">
+          <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
+            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
             <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
+            <element signature="e#5474#5475#0" expanded="true" />
+            <element signature="e#5516#5517#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />

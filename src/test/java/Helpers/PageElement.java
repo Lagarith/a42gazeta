@@ -174,12 +174,16 @@ public class PageElement {
 
 
 
-    public static boolean Click (String elementXpath) {
+    public static boolean Click (String elementXpath, String expected) {
         boolean error_status = false;
 
         if (IsDisplayed(elementXpath)) browser.findElement(By.xpath(elementXpath)).click();
 
         return error_status;
+    }
+
+    public static void Click (String xPath) {
+        Click(xPath, "/html/body");
     }
 
 
