@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+            <state relative-caret-position="450">
+              <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -82,8 +81,8 @@
                 <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
                 <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
                 <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-                <element signature="e#5474#5475#0" expanded="true" />
-                <element signature="e#5516#5517#0" expanded="true" />
+                <element signature="e#5481#5482#0" expanded="true" />
+                <element signature="e#5530#5531#0" expanded="true" />
                 <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
                 <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
@@ -819,8 +818,8 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="e#5474#5475#0" expanded="true" />
-            <element signature="e#5516#5517#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
@@ -895,8 +894,8 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="e#5474#5475#0" expanded="true" />
-            <element signature="e#5516#5517#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
@@ -971,8 +970,8 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="e#5474#5475#0" expanded="true" />
-            <element signature="e#5516#5517#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
@@ -1314,8 +1313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -1326,8 +1325,8 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="e#5474#5475#0" expanded="true" />
-            <element signature="e#5516#5517#0" expanded="true" />
+            <element signature="e#5481#5482#0" expanded="true" />
+            <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />

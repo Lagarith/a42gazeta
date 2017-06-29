@@ -182,8 +182,8 @@ public class PageElement {
         return error_status;
     }
 
-    public static void Click (String xPath) {
-        Click(xPath, "/html/body");
+    public static void Click (String elementXpath) {
+        Click(elementXpath, "/html/body");
     }
 
 
