@@ -53,7 +53,7 @@ public class HomePage_test extends Settings {
 
     @Test
     public void b_log_in_test() throws Exception {
-        LoadPage(LoginPage);
+        LoadPageAndVerify(LoginPage);
 
 //        SendKeys(EmailInput, Login);
 //        SendKeys(PasswordInput, Password);

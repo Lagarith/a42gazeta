@@ -25,6 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import static Helpers.Locators.extentReportFile;
 import static Helpers.Locators.replacement;
 import static Helpers.Locators.title_x_margin_from_top;
 import static Helpers.Settings.browser;
@@ -222,10 +223,7 @@ public class PageElement {
 
 
 
-    public static boolean LoadPage(String pageURL) {
-
-        String extentReportFile = System.getProperty("user.dir") + "\\extentReportFile.html";
-        String extentReportImage = System.getProperty("user.dir") + "\\extentReportFile.png";
+    public static boolean LoadPageAndVerify(String pageURL) {
 
         String testSuiteName = getMethodName();
 
@@ -253,7 +251,7 @@ public class PageElement {
 
         if (totalTime/1000 > 10) {
             System.out.println("Warning! Page load time, is too long");
-            extentTest.log(LogStatus.WARNING, "Page loading is critical.", "Load time = " + totalTime);
+            extentTest.log(LogStatus.WARNING, "Page loading is critical.", "Load time: " + totalTime/1000 + "sec.");
         } else extentTest.log(LogStatus.INFO, "Load time = " + totalTime);
 
         System.out.println("Total Time for page load - " + totalTime);
@@ -268,6 +266,22 @@ public class PageElement {
 
         extent.endTest(extentTest);
         extent.flush();
+
+        return error_status;
+    }
+
+
+
+    public static boolean LoadPage(String pageURL, String expected) {
+        boolean error_status = false;
+
+        String testSuiteName = getMethodName();
+
+        System.out.println(testSuiteName + ". ");
+        ExtentReports extent = new ExtentReports(extentReportFile, false);
+        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - " + pageURL);
+
+
 
         return error_status;
     }

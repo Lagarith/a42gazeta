@@ -9,7 +9,8 @@ public class Locators extends Settings {
 
     //EXTENT REPORT
     //Create report file
-
+    public static String extentReportFile = System.getProperty("user.dir") + "\\extentReportFile.html";
+    public static String extentReportImage = System.getProperty("user.dir") + "\\extentReportFile.png";
 
 
 
