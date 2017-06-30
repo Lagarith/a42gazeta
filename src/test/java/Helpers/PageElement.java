@@ -44,38 +44,10 @@ public class PageElement {
     }
 
 
-/*
-    public static boolean ContentMainImage(String element_) {
-        boolean error_status = false;
-
-        String image_url = browser.findElement(By.cssSelector("#material > div > div > img")).getAttribute("src");
-        System.out.println("url = " + image_url);
-
-        try {
-            URL url = new URL(image_url);
-            System.out.println("All is not fucked, but anyway sorry");
-        } catch (Exception e) {
-            System.out.println("All is fucked, sorry");
-        }
-
-        Image image = null;
-
-        try {
-            image = ImageIO.read(image_url);
-            if (image == null) {
-                System.out.println("The file could not be opened and you are faggot");
-            } else System.out.println("Everything is cool");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return error_status;
-    }
-*/
 
     private static String getMethodName(){
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        String methodName = stackTraceElements[2].getMethodName();
+        String methodName = stackTraceElements[3].getMethodName();
 
         return methodName;
     }
@@ -227,12 +199,30 @@ public class PageElement {
 
 
 
+    public static ExtentReports NewReport() {
+        ExtentReports extent = new ExtentReports(extentReportFile, false);
+        return extent;
+    }
+
+
+
+    public static ExtentTest PageLoadTime(ExtentTest extentTest, long totalTime) {
+        if (totalTime/1000 > 10) {
+            System.out.println("Warning! Page load time, is too long");
+            extentTest.log(LogStatus.WARNING, "Page loading is critical.", "Load time: " + totalTime/1000 + "sec");
+        } else extentTest.log(LogStatus.INFO, "Load time = " + totalTime/1000 + "sec");
+
+        return extentTest;
+    }
+
+    
+
     public static boolean LoadPageAndVerify(String pageURL) {
 
         String testSuiteName = getMethodName();
 
         System.out.println(testSuiteName + ". ");
-        ExtentReports extent = new ExtentReports(extentReportFile, false);
+        ExtentReports extent = NewReport();
         ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - " + pageURL);
 
         boolean error_status = true;
@@ -253,12 +243,9 @@ public class PageElement {
         long finish = System.currentTimeMillis(); // Stop timer.
         long totalTime = finish - start;
 
-        if (totalTime/1000 > 10) {
-            System.out.println("Warning! Page load time, is too long");
-            extentTest.log(LogStatus.WARNING, "Page loading is critical.", "Load time: " + totalTime/1000 + "sec.");
-        } else extentTest.log(LogStatus.INFO, "Load time = " + totalTime);
+        extentTest = PageLoadTime(extentTest, totalTime);
 
-        System.out.println("Total Time for page load - " + totalTime);
+        System.out.println("Total Time for page load - " + totalTime/1000 + " sec.");
 
         try {
             Thread.sleep(1000);

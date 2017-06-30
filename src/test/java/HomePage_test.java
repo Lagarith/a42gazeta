@@ -57,7 +57,7 @@ public class HomePage_test extends Settings {
 
 //        SendKeys(EmailInput, Login);
 //        SendKeys(PasswordInput, Password);
-        Click(LoginButton);
+//        Click(LoginButton);
 
 //        IsDisplayed(EmployersTitleH1);
     }
