@@ -261,7 +261,7 @@ public class PageElement {
 
         System.out.println("Total Time for page load - " + totalTime/1000 + " sec.");
 
-        if (error_status) extentTest.log(LogStatus.PASS, "Page loaded is loaded");
+        if (error_status) extentTest.log(LogStatus.PASS, "Page is loaded");
 
         extent.endTest(extentTest);
         extent.flush();
@@ -271,12 +271,8 @@ public class PageElement {
 
 
 
-    public static boolean LoadPage(String pageURL, String expected) {
+    public static void LoadPage(String pageURL, String expected) {
         browser.get(pageURL);
-
-        if(IsDisplayed(expected)) return true;
-        else return false;
-
     }
 
     public static void LoadPage(String PageURL) {
@@ -376,7 +372,6 @@ public class PageElement {
 
         return error_status;
     }
-
 
 
 

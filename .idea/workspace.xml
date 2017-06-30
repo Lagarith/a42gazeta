@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,7 +47,6 @@
             <state relative-caret-position="1377">
               <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
                 <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
                 <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -61,7 +62,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,8 +72,8 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
+            <state relative-caret-position="860">
+              <caret line="274" column="22" lean-forward="false" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -82,16 +85,15 @@
                 <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
                 <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
                 <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-                <element signature="e#4600#4601#0" expanded="true" />
-                <element signature="e#4649#4650#0" expanded="true" />
                 <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
                 <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
                 <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
                 <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-                <element signature="e#8069#8070#0" expanded="true" />
-                <element signature="e#8116#8117#0" expanded="true" />
+                <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+                <element signature="e#7896#7897#0" expanded="true" />
+                <element signature="e#7932#7933#0" expanded="true" />
                 <element signature="method#Check#0;class#PageElement#0" expanded="false" />
                 <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
                 <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -104,8 +106,8 @@
       <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -823,16 +825,15 @@
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
             <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4600#4601#0" expanded="true" />
-            <element signature="e#4649#4650#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8069#8070#0" expanded="true" />
-            <element signature="e#8116#8117#0" expanded="true" />
+            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="e#7896#7897#0" expanded="true" />
+            <element signature="e#7932#7933#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -861,7 +862,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -870,7 +873,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -903,16 +905,15 @@
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
             <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4600#4601#0" expanded="true" />
-            <element signature="e#4649#4650#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8069#8070#0" expanded="true" />
-            <element signature="e#8116#8117#0" expanded="true" />
+            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="e#7896#7897#0" expanded="true" />
+            <element signature="e#7932#7933#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -941,7 +942,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -950,7 +953,6 @@
         <state relative-caret-position="1564">
           <caret line="92" column="66" lean-forward="false" selection-start-line="92" selection-start-column="66" selection-end-line="92" selection-end-column="66" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -983,16 +985,15 @@
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
             <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4600#4601#0" expanded="true" />
-            <element signature="e#4649#4650#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8069#8070#0" expanded="true" />
-            <element signature="e#8116#8117#0" expanded="true" />
+            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="e#7896#7897#0" expanded="true" />
+            <element signature="e#7932#7933#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -1021,7 +1022,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
           <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,7 +1033,6 @@
         <state relative-caret-position="1020">
           <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1068,7 +1070,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,7 +1081,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1115,7 +1118,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,7 +1129,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1162,7 +1166,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1171,7 +1177,6 @@
         <state relative-caret-position="17">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1209,7 +1214,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2261">
           <caret line="134" column="22" lean-forward="false" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,7 +1225,6 @@
         <state relative-caret-position="17">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1300,7 +1306,6 @@
         <state relative-caret-position="1377">
           <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1314,22 +1319,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="306">
+          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
+        <state relative-caret-position="860">
+          <caret line="274" column="22" lean-forward="false" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -1341,16 +1348,15 @@
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
             <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4600#4601#0" expanded="true" />
-            <element signature="e#4649#4650#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8069#8070#0" expanded="true" />
-            <element signature="e#8116#8117#0" expanded="true" />
+            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
+            <element signature="e#7896#7897#0" expanded="true" />
+            <element signature="e#7932#7933#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />

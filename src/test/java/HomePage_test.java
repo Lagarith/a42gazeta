@@ -54,12 +54,6 @@ public class HomePage_test extends Settings {
     @Test
     public void b_log_in_test() throws Exception {
         LoadPageAndVerify(LoginPage);
-
-//        SendKeys(EmailInput, Login);
-//        SendKeys(PasswordInput, Password);
-//        Click(LoginButton);
-
-//        IsDisplayed(EmployersTitleH1);
     }
 
 
@@ -68,30 +62,5 @@ public class HomePage_test extends Settings {
     public static void setDown() throws Exception {
         browser.quit();
     }
-
-
-//    Create report file
-    //    String extentReportFile = System.getProperty("user.dir") + "\\extentReportFile.html";
-    //    String extentReportImage = System.getProperty("user.dir") + "\\extentReportImage.png";
-
-//    Create object of extent report and specify the report file path.
-    //    ExtentReports extent = new ExtentReports(extentReportFile, false);
-
-//    Start the test using the ExtentTest class object.
-    //    ExtentTest extentTest = extent.startTest("Open " + domens[i],
-    //            "Open " + domens[i] + "\nExpected: " + expected[i]);
-
-//    Add logs
-    //    extentTest.log(LogStatus.INFO, "Trying to open " + domens[i]);
-
-//    Add logs as error
-    //    extentTest.log(LogStatus.ERROR, "FAILURE! Expected result not found"
-    //        + extentTest.addScreenCapture("C:/tests/HomePage/images/"
-    //              + domens[i] + ".jpg"));
-
-//    Add logs as success
-    //    extentTest.log(LogStatus.PASS, "Home page opened and expected result found");
-    //    delete_screenshot("C:/tests/HomePage/images/" + domens[i] + ".jpg");
-
 
 }
