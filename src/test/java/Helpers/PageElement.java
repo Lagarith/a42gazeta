@@ -199,6 +199,18 @@ public class PageElement {
 
 
 
+    public static void Pause(long waitingTime) {
+        System.out.println("Pause (" + waitingTime + " ms)");
+
+        try {
+            Thread.sleep(waitingTime);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
     public static ExtentReports NewReport() {
         ExtentReports extent = new ExtentReports(extentReportFile, false);
         return extent;
@@ -215,7 +227,7 @@ public class PageElement {
         return extentTest;
     }
 
-    
+
 
     public static boolean LoadPageAndVerify(String pageURL) {
 
@@ -245,13 +257,9 @@ public class PageElement {
 
         extentTest = PageLoadTime(extentTest, totalTime);
 
-        System.out.println("Total Time for page load - " + totalTime/1000 + " sec.");
+        Pause(1000);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        System.out.println("Total Time for page load - " + totalTime/1000 + " sec.");
 
         if (error_status) extentTest.log(LogStatus.PASS, "Page loaded is loaded");
 

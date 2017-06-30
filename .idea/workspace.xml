@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +69,8 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
+            <state relative-caret-position="529">
+              <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -89,10 +87,11 @@
                 <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
                 <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
+                <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
                 <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-                <element signature="e#7924#7925#0" expanded="true" />
-                <element signature="e#7971#7972#0" expanded="true" />
+                <element signature="e#8069#8070#0" expanded="true" />
+                <element signature="e#8116#8117#0" expanded="true" />
                 <element signature="method#Check#0;class#PageElement#0" expanded="false" />
                 <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
                 <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -829,10 +828,11 @@
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#7924#7925#0" expanded="true" />
-            <element signature="e#7971#7972#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8116#8117#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -908,10 +908,11 @@
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#7924#7925#0" expanded="true" />
-            <element signature="e#7971#7972#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8116#8117#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -987,10 +988,11 @@
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#7924#7925#0" expanded="true" />
-            <element signature="e#7971#7972#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8116#8117#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -1326,8 +1328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
+        <state relative-caret-position="529">
+          <caret line="259" column="20" lean-forward="false" selection-start-line="259" selection-start-column="20" selection-end-line="259" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -1344,10 +1346,11 @@
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
             <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="e#7924#7925#0" expanded="true" />
-            <element signature="e#7971#7972#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8116#8117#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
