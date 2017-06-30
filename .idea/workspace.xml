@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,7 +33,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="1564">
               <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
@@ -42,7 +43,7 @@
       <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
+            <state relative-caret-position="1377">
               <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,8 +70,8 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+            <state relative-caret-position="477">
+              <caret line="284" column="5" lean-forward="false" selection-start-line="284" selection-start-column="5" selection-end-line="284" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -81,13 +82,15 @@
                 <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
                 <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
                 <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
+                <element signature="method#Click#0;class#PageElement#0" expanded="false" />
                 <element signature="e#5481#5482#0" expanded="true" />
                 <element signature="e#5530#5531#0" expanded="true" />
                 <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
                 <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
                 <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
                 <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-                <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
+                <element signature="e#8474#8475#0" expanded="true" />
+                <element signature="e#8521#8522#0" expanded="true" />
                 <element signature="method#Check#0;class#PageElement#0" expanded="false" />
                 <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
                 <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -101,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
-              <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -166,6 +169,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -247,8 +252,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -749,14 +752,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30326086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30326086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -773,6 +775,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -818,13 +821,15 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
             <element signature="e#5481#5482#0" expanded="true" />
             <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
+            <element signature="e#8474#8475#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -894,13 +899,15 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
             <element signature="e#5481#5482#0" expanded="true" />
             <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
+            <element signature="e#8474#8475#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -970,13 +977,15 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
             <element signature="e#5481#5482#0" expanded="true" />
             <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
+            <element signature="e#8474#8475#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
@@ -1268,13 +1277,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="452" column="18" lean-forward="false" selection-start-line="452" selection-start-column="18" selection-end-line="452" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="1564">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
@@ -1282,7 +1290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
+        <state relative-caret-position="1377">
           <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1306,15 +1314,15 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
-          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+        <state relative-caret-position="477">
+          <caret line="284" column="5" lean-forward="false" selection-start-line="284" selection-start-column="5" selection-end-line="284" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
@@ -1325,13 +1333,15 @@
             <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
             <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
             <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
+            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
             <element signature="e#5481#5482#0" expanded="true" />
             <element signature="e#5530#5531#0" expanded="true" />
             <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
             <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
             <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
             <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
+            <element signature="e#8474#8475#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
             <element signature="method#Check#0;class#PageElement#0" expanded="false" />
             <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
             <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />

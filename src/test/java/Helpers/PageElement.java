@@ -284,6 +284,10 @@ public class PageElement {
 
     }
 
+    public static void LoadPage(String PageURL) {
+        LoadPage(PageURL, "/html/body");
+    }
+
 
 
     public static boolean Check(String fileName) {
