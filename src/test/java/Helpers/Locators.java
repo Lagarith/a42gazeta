@@ -16,6 +16,7 @@ public class Locators extends Settings {
 
     //LINKS
     public static final String LoginPage = "http://test-case.vats.atwinta.ru/login/";
+    public static final String News_List = "http://gazeta.a42.ru/lenta/news";
 
 
 
