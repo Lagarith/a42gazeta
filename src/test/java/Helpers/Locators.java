@@ -16,12 +16,12 @@ public class Locators extends Settings {
 
     //LINKS
     public static final String LoginPage = "http://test-case.vats.atwinta.ru/login/";
-    public static final String News_List = "http://gazeta.a42.ru/lenta/news";
+    public static final String NewsListURL = "http://gazeta.a42.ru/lenta/news";
 
 
 
     //SPEC FILES
-    public static final String NewsList = "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec";
+    public static final String NewsList_gspec = "news_List";
 
 
 

@@ -1,0 +1,631 @@
+<html>
+    <head>
+        <title>Galen Reports</title>
+        <link rel="stylesheet" type="text/css" href="report.css"></link>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="handlebars-v2.0.0.js"></script>
+        <script src="galen-report.js"></script>
+        <script>
+var reportData = {
+  "testId" : "1--layout",
+  "name" : "Все главные новости дня – Газета Кемерова layout",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Check Все главные новости дня – Газета Кемерова layout",
+      "status" : "info",
+      "time" : 1499071392986,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Header",
+        "objects" : [ {
+          "name" : "header_nav",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 31
+            },
+            "name" : "visible",
+            "highlight" : [ "header_nav" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 32
+            },
+            "name" : "centered horizontally inside container",
+            "highlight" : [ "header_nav", "container" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 33
+            },
+            "name" : "width 970 to 980 px",
+            "highlight" : [ "header_nav" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 34
+            },
+            "name" : "height 80 to 90 px",
+            "highlight" : [ "header_nav" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 35
+            },
+            "name" : "below header_banner-1 15 to 25 px",
+            "highlight" : [ "header_nav", "header_banner-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 36
+            },
+            "name" : "above header_banner-2 5 to 15 px",
+            "highlight" : [ "header_nav", "header_banner-2" ]
+          } ]
+        } ]
+      }, {
+        "name" : "Main content",
+        "objects" : [ {
+          "name" : "container",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 40
+            },
+            "name" : "visible",
+            "highlight" : [ "container" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 41
+            },
+            "name" : "centered horizontally inside body",
+            "highlight" : [ "container", "body" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 42
+            },
+            "name" : "width 980 to 1024 px",
+            "highlight" : [ "container" ]
+          } ]
+        }, {
+          "name" : "news-main-item",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 45
+            },
+            "name" : "visible",
+            "highlight" : [ "news-main-item" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 46
+            },
+            "name" : "inside container 22 px left",
+            "highlight" : [ "news-main-item", "container" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 47
+            },
+            "name" : "height 310 to 330 px",
+            "highlight" : [ "news-main-item" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 48
+            },
+            "name" : "width 720 to 740 px",
+            "highlight" : [ "news-main-item" ]
+          } ]
+        }, {
+          "name" : "news-item-1",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 51
+            },
+            "name" : "visible",
+            "highlight" : [ "news-item-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 52
+            },
+            "name" : "width 230 px",
+            "highlight" : [ "news-item-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 53
+            },
+            "name" : "height 240 to 260 px",
+            "highlight" : [ "news-item-1" ]
+          } ]
+        }, {
+          "name" : "news-item-2",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 56
+            },
+            "name" : "visible",
+            "highlight" : [ "news-item-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 57
+            },
+            "name" : "left-of news-item-3 15 to 25 px",
+            "highlight" : [ "news-item-2", "news-item-3" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 58
+            },
+            "name" : "right-of news-item-1 15 to 25 px",
+            "highlight" : [ "news-item-2", "news-item-1" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 59
+            },
+            "name" : "above news-item-5 15 to 25 px",
+            "highlight" : [ "news-item-2", "news-item-5" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 60
+            },
+            "name" : "width 230 px",
+            "highlight" : [ "news-item-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 61
+            },
+            "name" : "height 240 to 260 px",
+            "highlight" : [ "news-item-2" ]
+          } ]
+        }, {
+          "name" : "news-item-3",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 64
+            },
+            "name" : "visible",
+            "highlight" : [ "news-item-3" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 65
+            },
+            "name" : "width 230 px",
+            "highlight" : [ "news-item-3" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 66
+            },
+            "name" : "height 240 to 260 px",
+            "highlight" : [ "news-item-3" ]
+          } ]
+        }, {
+          "name" : "news-item-4",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 69
+            },
+            "name" : "visible",
+            "highlight" : [ "news-item-4" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 70
+            },
+            "name" : "width 230 px",
+            "highlight" : [ "news-item-4" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 71
+            },
+            "name" : "height 240 to 260 px",
+            "highlight" : [ "news-item-4" ]
+          } ]
+        }, {
+          "name" : "news-item-5",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 74
+            },
+            "name" : "visible",
+            "highlight" : [ "news-item-5" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 75
+            },
+            "name" : "below news-item-2 15 to 25 px",
+            "highlight" : [ "news-item-5", "news-item-2" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 76
+            },
+            "name" : "width 230 px",
+            "highlight" : [ "news-item-5" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 77
+            },
+            "name" : "height 240 to 260 px",
+            "highlight" : [ "news-item-5" ]
+          } ]
+        }, {
+          "name" : "show-more_button",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 80
+            },
+            "name" : "below news-item-6 25 to 35 px",
+            "highlight" : [ "show-more_button", "news-item-6" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 81
+            },
+            "name" : "height 35 to 45 px",
+            "highlight" : [ "show-more_button" ]
+          } ]
+        }, {
+          "name" : "side-bar",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 84
+            },
+            "name" : "visible",
+            "highlight" : [ "side-bar" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 85
+            },
+            "name" : "inside container 22 px right",
+            "highlight" : [ "side-bar", "container" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 86
+            },
+            "name" : "right-of news-main-item 15 to 25 px",
+            "highlight" : [ "side-bar", "news-main-item" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 87
+            },
+            "name" : "width 220 to 230 px",
+            "highlight" : [ "side-bar" ]
+          } ]
+        }, {
+          "name" : "side-bar_banner",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 90
+            },
+            "name" : "visible",
+            "highlight" : [ "side-bar_banner" ]
+          } ]
+        }, {
+          "name" : "slider",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/news_List.spec",
+              "lineNumber" : 93
+            },
+            "name" : "visible",
+            "highlight" : [ "slider" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "container" : {
+          "area" : [ 156, 0, 1024, 3635 ]
+        },
+        "slider" : {
+          "area" : [ 178, 1944, 730, 311 ]
+        },
+        "side-bar" : {
+          "area" : [ 928, 380, 230, 1330 ]
+        },
+        "header_banner-1" : {
+          "area" : [ 178, 20, 980, 80 ]
+        },
+        "header_banner-2" : {
+          "area" : [ 179, 216, 978, 38 ]
+        },
+        "side-bar_banner" : {
+          "area" : [ 928, 400, 230, 370 ]
+        },
+        "body" : {
+          "area" : [ 0, 0, 1337, 677 ]
+        },
+        "header_nav" : {
+          "area" : [ 179, 120, 978, 86 ]
+        },
+        "news-main-item" : {
+          "area" : [ 178, 420, 730, 320 ]
+        },
+        "news-item-4" : {
+          "area" : [ 178, 1050, 230, 240 ]
+        },
+        "news-item-5" : {
+          "area" : [ 428, 1050, 230, 260 ]
+        },
+        "news-item-6" : {
+          "area" : [ 428, 1590, 230, 260 ]
+        },
+        "show-more_button" : {
+          "area" : [ 178, 1880, 730, 39 ]
+        },
+        "news-item-1" : {
+          "area" : [ 178, 770, 230, 260 ]
+        },
+        "news-item-2" : {
+          "area" : [ 428, 770, 230, 260 ]
+        },
+        "news-item-3" : {
+          "area" : [ 678, 770, 230, 240 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+};
+        </script>
+        <script>
+
+            $(function () {
+                var galenReport = createGalenReport();
+                galenReport.render("main", reportData);
+            });
+        </script>
+    </head>
+    <body>
+        <script id="report-tpl" type="text/x-handlebars-template">
+            <ul class="report-nodes">
+            {{#each report.nodes}}
+                {{renderNode this}}
+            {{/each}}
+            </ul>
+        </script>
+        <script id="report-node-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-{{status}} contains-children-{{hasChildElements nodes}} collapsed" href="#">{{status}}</a>
+                <div class="node-name node-status-{{status}}">{{name}}</div>
+                {{#if stacktrace}}
+                    <div class="stacktrace">{{stacktrace}}</div>
+                {{/if}}
+                {{#if attachments}}
+                    <ul class="report-node-attachments">
+                        {{#each attachments}}
+                            <li>
+                                <a class="icon-sprite-before node-attachment" href="{{this}}">{{this}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                <div class="node-details expand-container">
+                    {{#if nodes}}
+                        <ul class="report-nodes">
+                            {{#each nodes}}
+                                {{renderNode this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        <script id="report-node-text-tpl" type="text/x-handlebars-template">
+            <li>
+                <div class="node-simple-text">
+                    {{name}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-label node-status-info contains-children-true collapsed" href="#">LAYOUT</a>
+                <div class="node-name">{{name}}</div>
+                <div class="node-details expand-container">
+                    {{renderSublayout this}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-sublayout-tpl" type="text/x-handlebars-template">
+            <div class="layout-report" data-layout-id="{{layoutId}}" data-screenshot="{{screenshot}}">
+                <ul class="layout-sections">
+                    {{#each sections}}
+                        {{renderLayoutSection this}}
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+        <script id="report-layout-section-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-section icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <div class="layout-details expand-container">
+                    {{#if sections}}
+                        <ul class="layout-sections">
+                        {{#each sections}}
+                            {{renderLayoutSection this}}
+                        {{/each}}
+                        </ul>
+                    {{/if}}
+                    {{#if objects}}
+                        <ul class="layout-objects">
+                            {{#each objects}}
+                                {{renderLayoutObject this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        
+        <script id="report-layout-object-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-object icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <ul class="layout-checks expand-container">
+                    {{#each specs}}
+                        {{renderLayoutCheck this}}
+                    {{/each}}
+                    {{#each specGroups}}
+                    <li>
+                        <a class="layout-specgroup icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                        <ul class="layout-checks expand-container">
+                            {{#each specs}}
+                                {{renderLayoutCheck this}}
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+        </script>
+        <script id="report-layout-check-tpl" type="text/x-handlebars-template">
+            <li>
+            <a class="layout-check icon-sprite-before layout-check-status-{{status}}" href="#" 
+                data-highlight-objects="{{commaSeparated highlight}}"
+                title="{{place.filePath}}#{{place.lineNumber}}"
+                >{{name}}</a>
+
+                {{#if errors}}
+                    <div class="layout-check-error-message">
+                        {{#if imageComparison}}
+                        <a class="image-comparison-link" 
+                            data-actual-image="{{imageComparison.actualImage}}"
+                            data-expected-image="{{imageComparison.expectedImage}}"
+                            data-map-image="{{imageComparison.comparisonMapImage}}"
+                            href="#">Show image comparison</a>
+                        {{/if}}
+                        <div class="layout-check-error-message-text">
+                            <ul>
+                            {{#each errors}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                {{/if}}
+
+                {{#if subLayout}}
+                    {{renderSublayout subLayout}}
+                {{/if}}
+            </li>
+        </script>
+        <script id="screenshot-popup-tpl" type="text/x-handlebars-template">
+            <div class="screenshot-canvas">
+                <img src="{{screenshot}}"/>
+                {{#each objects}}
+                <div class="canvas-rect" style="left: {{area.left}}px; top: {{area.top}}px; width: {{area.width}}px; height: {{area.height}}px; border-color: {{color}};">
+                    <div class="canvas-rect-wrapper">
+                        <div class="canvas-rect-hint" style="background: {{color}};">{{@key}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </script>
+        <script id="image-comparison-tpl" type="text/x-handlebars-template">
+            <div class="image-comparison">
+                <h5>Actual</h5>
+                <img src="{{actual}}"/>
+
+                <h5>Expected</h5>
+                <img src="{{expected}}"/>
+
+                <h5>Comparison map</h5>
+                <img src="{{map}}"/>
+            </div>
+        </script>
+
+
+        <div id="menu">
+            <ul>
+                <li><a class="menu-op-expand-all" href="#">Expand All</a></li>
+                <li><a class="menu-op-collapse-all" href="#">Collapse All</a></li>
+                <li><a class="menu-op-expand-errors" href="#">Expand Errors</a></li>
+            </ul>
+        </div>
+        <h2>Все главные новости дня – Газета Кемерова layout</h2>
+        <div id="main"></div>
+        <div id="screen-shadow"></div>
+        <div id="popup" class="popup">
+            <div class="popup-wrapper">
+                <a class="popup-close-link" href="#">close</a>
+                <div class="popup-content"></div>
+            </div>
+        </div>
+        <div id="notification" class="notification">
+            <div class="notification-wrapper">
+                <a class="notification-close-link" href="#">close</a>
+                <div class="notification-summary"></div>
+                <div class="notification-message"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,6 +1,8 @@
 import Helpers.PageElement;
 import Helpers.Settings;
 import Helpers.Locators.*;
+import com.galenframework.config.GalenConfig;
+import com.galenframework.config.GalenProperty;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -45,6 +47,8 @@ public class HomePage_test extends Settings {
 
     @BeforeClass
     public static void setUp() throws Exception {
+        System.setProperty("galen.config", "C:\\tests\\a42gazeta\\galen.config");
+        GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
     }
@@ -52,8 +56,16 @@ public class HomePage_test extends Settings {
 
 
     @Test
-    public void b_log_in_test() throws Exception {
-        LoadPageAndVerify(LoginPage);
+    public void a_NewsList_load_test() throws Exception {
+        LoadPageAndVerify(NewsListURL);
+    }
+
+
+
+    @Test
+    public void b_NewsList_HtmlCheck_test() throws Exception {
+        LoadPage(NewsListURL);
+        Check(NewsList_gspec);
     }
 
 

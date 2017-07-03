@@ -1,17 +1,17 @@
 {
   "tests" : [ {
-    "name" : "Good Line ВАТС - Коллтрекинг layout",
-    "startedAt" : 1498201074370,
-    "endedAt" : 1498201074370,
-    "failed" : true,
+    "name" : "Все главные новости дня – Газета Кемерова layout",
+    "startedAt" : 1499071392985,
+    "endedAt" : 1499071392985,
+    "failed" : false,
     "statistic" : {
-      "passed" : 22,
-      "errors" : 8,
+      "passed" : 40,
+      "errors" : 0,
       "warnings" : 0,
-      "total" : 30
+      "total" : 40
     },
-    "testId" : "1-good-line---layout",
+    "testId" : "1--layout",
     "duration" : 0,
-    "failed" : true
+    "failed" : false
   } ]
 }

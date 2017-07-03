@@ -1,6 +1,7 @@
 package Helpers;
 
 import com.galenframework.api.Galen;
+import com.galenframework.config.GalenConfig;
 import com.galenframework.reports.GalenTestInfo;
 import com.galenframework.reports.HtmlReportBuilder;
 import com.galenframework.reports.model.LayoutReport;
@@ -15,6 +16,7 @@ import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.logging.Logs;
+import org.testng.collections.Objects;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -272,7 +274,24 @@ public class PageElement {
 
 
     public static void LoadPage(String pageURL, String expected) {
-        browser.get(pageURL);
+        String currentURL = browser.getCurrentUrl();
+        System.out.println("Current URL is: " + currentURL);
+
+        if (pageURL.equals(currentURL)) {
+            try {
+                RefreshPage();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            browser.get(pageURL);
+        }
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void LoadPage(String PageURL) {
@@ -282,6 +301,12 @@ public class PageElement {
 
 
     public static boolean Check(String fileName) {
+        String testSuiteName = getMethodName();
+
+        System.out.println(testSuiteName + ". ");
+        ExtentReports extent = NewReport();
+        ExtentTest extentTest = extent.startTest(testSuiteName + " - Page check by galen", "Page check by galen");
+
         boolean error_status = true;
 
         LayoutReport layoutReport = null;
@@ -290,6 +315,11 @@ public class PageElement {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        extentTest.log(LogStatus.PASS, "<a href = \"C:\\tests\\a42gazeta\\target\\1--layout.html\">Galen report</a>");
+
+        extent.endTest(extentTest);
+        extent.flush();
 
         //Create a tests list
         List<GalenTestInfo> tests = new LinkedList<GalenTestInfo>();
