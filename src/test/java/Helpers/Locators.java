@@ -20,6 +20,11 @@ public class Locators extends Settings {
 
 
 
+    //SPEC FILES
+    public static final String NewsList = "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec";
+
+
+
     //DATA
     public static final String Login = "director@test-case-company.com";
     public static final String Password = "password";

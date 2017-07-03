@@ -3,7 +3,9 @@
 	body					xpath	/html/body
 	container				xpath	/html/body/div[1]
 
-	show-more_button		xpath	/html/body/div[1]/div[5]/div[1]/div[2]/noindex/p/a
+	header_banner-1			xpath	/html/body/div[1]/noindex[1]
+	header_banner-2			xpath	/html/body/div[1]/div[1]
+	header_nav				xpath	/html/body/div[1]/header
 
 	news-main-item			xpath	/html/body/div[1]/div[5]/div[1]/div[1]/div[2]
 	news-main-item-title	xpath	/html/body/div[1]/div[5]/div[1]/div[1]/div[2]/div/h1
@@ -19,10 +21,76 @@
 	side-bar				xpath	/html/body/div[1]/div[5]/div[2]
 	side-bar_banner			xpath	/html/body/div[1]/div[5]/div[2]/noindex[1]
 
+	show-more_button		xpath	/html/body/div[1]/div[5]/div[1]/div[2]/noindex/p/a
+
 	slider					xpath	/html/body/div[1]/div[5]/div[1]/div[3]/div
+
+= Header =
+	header_nav:
+		visible
+		centered horizontally inside container
+		width 950 to 960 px
+		height 65 to 75 px
+		below header_banner-1 15 to 25 px
+		above header_banner-2 15 to 25 px
 
 = Main content =
 	container:
+		visible
 		centered horizontally inside body
-		width 970 to 990 px
-		
+		width 975 to 985 px
+
+	news-main-item:
+		visible
+		aligned vertically left container
+		height 310 to 330 px
+		width 720 to 740 px
+
+	news-item-1:
+		visible
+		width 230 px
+		height 240 to 260 px
+
+	news-item-2:
+		visible
+		left-of news-item-3 15 to 25 px
+		right-of news-item-1 15 to 25 px
+		above news-item-5 15 to 25 px
+		width 230 px
+		height 240 to 260 px
+
+	news-item-3:
+		visible
+		width 230 px
+		height 240 to 260 px
+
+	news-item-4:
+		visible
+		width 230 px
+		height 240 to 260 px
+
+	news-item-5:
+		visible
+		left-of news-item-4 15 to 25 px
+		below news-item-2 15 to 25 px
+		width 230 px
+		height 240 to 260 px
+
+	show-more_button:
+		above news-item-6 30 px
+		height 35 to 45 px
+
+	side-bar:
+		visible
+		aligned vertically right container
+		right-of news-main-item 15 to 25 px
+		width 220 to 230 px
+
+	side-bar_banner:
+		visible
+
+	slider:
+		visible
+
+
+

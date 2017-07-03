@@ -4,6 +4,7 @@
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/specs/news_List.spec" afterPath="$PROJECT_DIR$/src/test/resources/specs/news_List.spec" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,6 +47,7 @@
             <state relative-caret-position="867">
               <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
                 <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
                 <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -56,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+            <state relative-caret-position="340">
+              <caret line="23" column="110" lean-forward="false" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -69,8 +71,8 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="274" column="22" lean-forward="false" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
+            <state relative-caret-position="1122">
+              <caret line="230" column="0" lean-forward="true" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
               <folding>
                 <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
                 <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
@@ -99,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -866,6 +868,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -943,6 +946,7 @@
         <state relative-caret-position="1564">
           <caret line="92" column="66" lean-forward="false" selection-start-line="92" selection-start-column="66" selection-end-line="92" selection-end-column="66" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1020,6 +1024,7 @@
         <state relative-caret-position="1020">
           <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1066,6 +1071,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1112,6 +1118,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1158,6 +1165,7 @@
         <state relative-caret-position="17">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1204,6 +1212,7 @@
         <state relative-caret-position="17">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1285,6 +1294,7 @@
         <state relative-caret-position="867">
           <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1294,18 +1304,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="340">
+          <caret line="23" column="110" lean-forward="false" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="274" column="22" lean-forward="false" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
+        <state relative-caret-position="1122">
+          <caret line="230" column="0" lean-forward="true" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
           <folding>
             <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
             <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
@@ -1333,10 +1343,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+        <state relative-caret-position="306">
+          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
           <folding />
         </state>
       </provider>
