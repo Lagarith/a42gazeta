@@ -32,6 +32,11 @@ public class Locators extends Settings {
 
 
 
+    //ELEMENTS
+    public static final String NewsList_main_news_Image = "/html/body/div[1]/div[5]/div[1]/div[1]/div[2]/a/span/img";
+
+
+
     //LOGIN PAGE ELEMENTS
     public static final String EmailInput = "/html/body/div/div/div[2]/div[1]/form/div[2]/div/div[2]/input";
     public static final String PasswordInput = "/html/body/div/div/div[2]/div[1]/form/div[3]/div/div[2]/input";

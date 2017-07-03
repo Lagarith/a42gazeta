@@ -10,8 +10,10 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -352,6 +354,23 @@ public class PageElement {
         }
 
         return error_status;
+    }
+
+
+
+    public static Object IsImageDisplayed(String imageXpath) {
+        boolean error_status = false;
+
+        WebElement brokenImage = browser.findElement(By.xpath(imageXpath));
+
+        WrapsDriver wrapsDriver = (WrapsDriver) brokenImage;
+        String script = "return (typeof arguments[0].naturalWidth!=\"undefined\"" +
+                " && arguments[0].naturalWidth>0)";
+        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) wrapsDriver.getWrappedDriver();
+
+        Object isBrokenShown = javascriptExecutor.executeScript(script, brokenImage);
+
+        return isBrokenShown;
     }
 
 

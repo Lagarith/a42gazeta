@@ -12,8 +12,8 @@ import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
+import org.openqa.selenium.*;
+import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 
@@ -66,6 +66,16 @@ public class HomePage_test extends Settings {
     public void b_NewsList_HtmlCheck_test() throws Exception {
         LoadPage(NewsListURL);
         Check(NewsList_gspec);
+    }
+
+
+
+    @Test
+    public void testImageShown(){
+        browser.get("http://gazeta.a42.ru/lenta/news/");
+
+        IsImageDisplayed(NewsList_main_news_Image);
+        
     }
 
 
