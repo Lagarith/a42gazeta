@@ -32,8 +32,11 @@ public class Locators extends Settings {
 
 
 
-    //ELEMENTS
+    //IMAGES
     public static final String NewsList_main_news_Image = "/html/body/div[1]/div[5]/div[1]/div[1]/div[2]/a/span/img";
+    public static final String NewsList_news_item_Image_1 = "//*[@id=\"paginate-block\"]/div/div[1]/p[1]/a/span/img";
+    public static final String NewsList_news_item_Image_2 = "//*[@id=\"paginate-block\"]/div/div[2]/p[1]/a/span/img";
+
 
 
 
@@ -46,8 +49,6 @@ public class Locators extends Settings {
 
     //EMPLOYERS PAGE
     public static final String EmployersTitleH1 = "//*[@id=\"root\"]/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/span";
-
-
 
 
 

@@ -359,7 +359,6 @@ public class PageElement {
 
 
     public static Object IsImageDisplayed(String imageXpath) {
-        boolean error_status = false;
 
         WebElement brokenImage = browser.findElement(By.xpath(imageXpath));
 

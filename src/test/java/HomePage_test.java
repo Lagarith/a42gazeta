@@ -7,6 +7,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.sun.deploy.ref.Helpers;
+import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -16,14 +17,24 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.shooting.RotatingDecorator;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategy;
+import ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator;
+import ru.yandex.qatools.ashot.shooting.cutter.CutStrategy;
+import ru.yandex.qatools.ashot.shooting.cutter.VariableCutStrategy;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Properties;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
+import javax.imageio.ImageIO;
 import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -71,11 +82,33 @@ public class HomePage_test extends Settings {
 
 
     @Test
-    public void testImageShown(){
-        browser.get("http://gazeta.a42.ru/lenta/news/");
+    public void c_testImageDisplayed_test() throws Exception {
+        boolean error_status = true;
+        ExtentReports extent = NewReport();
+        ExtentTest extentTest = extent.startTest("c_testImageDisplayed_test", "Test for all images is loaded");
 
-        IsImageDisplayed(NewsList_main_news_Image);
-        
+        LoadPage(NewsListURL);
+        if (browser.findElement(By.xpath(NewsList_main_news_Image)).isDisplayed()) {
+            extentTest.log(LogStatus.INFO, "Image is load", "image xpath: " + NewsList_main_news_Image);
+        } else {
+            extentTest.log(LogStatus.INFO, "<b>Image is not load</b>", "image xpath: " + NewsList_main_news_Image);
+            error_status = false;
+        }
+
+        for (int i = 1; i < 13; i++) {
+            if (browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/span/img")).isDisplayed()) {
+                extentTest.log(LogStatus.INFO, "Image is load", "image xpath: " + "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/span/img");
+            } else {
+                extentTest.log(LogStatus.INFO, "<b>Image is not load</b>", "image xpath: " + "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/span/img");
+                error_status = false;
+            }
+        }
+
+        if (error_status) extentTest.log(LogStatus.PASS, "All images will load, without errors");
+            else extentTest.log(LogStatus.FAIL, "<b>Some images is not load</b>");
+
+        extent.endTest(extentTest);
+        extent.flush();
     }
 
 
