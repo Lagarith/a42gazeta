@@ -49,7 +49,6 @@
 	read-more_news_img-5		xpath	/html/body/div[1]/div[5]/div[1]/div[4]/div/div/div[2]/div[5]/div/a/div[1]/img
 	read-more_news_img-6		xpath	/html/body/div[1]/div[5]/div[1]/div[4]/div/div/div[2]/div[6]/div/a/div[1]/img
 
-
 = Header =
 	
 
@@ -60,5 +59,4 @@
 
 = Side bar =
 	
-
 
