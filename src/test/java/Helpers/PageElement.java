@@ -21,6 +21,7 @@ import org.openqa.selenium.logging.Logs;
 import org.testng.collections.Objects;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
@@ -153,7 +154,9 @@ public class PageElement {
     public static boolean Click (String elementXpath, String expected) {
         boolean error_status = false;
 
-        if (IsDisplayed(elementXpath)) browser.findElement(By.xpath(elementXpath)).click();
+        browser.findElement(By.xpath(elementXpath)).click();
+
+        Pause(1000);
 
         return error_status;
     }
@@ -423,4 +426,16 @@ public class PageElement {
 
 
 
+    public void ReadFile(String filePath) {
+
+    }
+
+
+
+    /*public void save(String fileName) throws FileNotFoundException {
+    String tmp = clubs.toString();
+    PrintWriter pw = new PrintWriter(new FileOutputStream(fileName));
+    pw.write(tmp);
+    pw.close();
+}*/
 }

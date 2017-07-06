@@ -2,8 +2,7 @@ package Helpers;
 
 import com.relevantcodes.extentreports.ExtentReports;
 
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.*;
 
 public class Locators extends Settings {
 
@@ -11,6 +10,11 @@ public class Locators extends Settings {
     //Create report file
     public static String extentReportFile = System.getProperty("user.dir") + "\\extentReportFile.html";
     public static String extentReportImage = System.getProperty("user.dir") + "\\extentReportFile.png";
+
+
+
+    //COLLECTIONS
+
 
 
 
@@ -36,6 +40,11 @@ public class Locators extends Settings {
     public static final String NewsList_main_news_Image = "/html/body/div[1]/div[5]/div[1]/div[1]/div[2]/a/span/img";
     public static final String NewsList_news_item_Image_1 = "//*[@id=\"paginate-block\"]/div/div[1]/p[1]/a/span/img";
     public static final String NewsList_news_item_Image_2 = "//*[@id=\"paginate-block\"]/div/div[2]/p[1]/a/span/img";
+
+
+
+    //NEWS LIST ELEMENTS
+    public static final String NewsList_ShowMore_btn = "//*[@id=\"paginate-block\"]/noindex/p/a";
 
 
 
