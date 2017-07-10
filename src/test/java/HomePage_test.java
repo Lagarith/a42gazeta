@@ -53,7 +53,6 @@ import static Helpers.PageElement.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class HomePage_test extends Settings {
 
-    protected static String testSuite_1 = "LoginPage . ";
 
 
     @BeforeClass
@@ -110,10 +109,6 @@ public class HomePage_test extends Settings {
         extent.endTest(extentTest);
         extent.flush();
     }
-
-
-
-
 
 
 

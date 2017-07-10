@@ -50,29 +50,10 @@ import javax.mail.internet.MimeMultipart;
 import static Helpers.Locators.*;
 import static Helpers.PageElement.*;
 
+@FixMethodOrder (MethodSorters.NAME_ASCENDING.NAME_ASCENDING)
+public class PhotoReportList_test extends Settings{
 
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class NewsPage_test extends Settings{
-
-    private static String[][] data = new String[31][2];
-
-    private static String[][] getLinks() throws Exception {
-        browser.get(NewsListURL);
-
-        Click(NewsList_ShowMore_btn);
-        Click(NewsList_ShowMore_btn);
-
-        for (int i = 1; i < 31; i++) {
-            String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
-            String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
-
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a")).getAttribute("href");
-        }
-
-        return data;
-    }
 
     @BeforeClass
     public static void setUp() throws Exception {
@@ -80,17 +61,56 @@ public class NewsPage_test extends Settings{
         GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
-        data = getLinks();
     }
 
 
 
     @Test
-    public void a_Open_Article_Page_test() throws Exception {
-        for (String[] item:data) {
-            LoadPageAndVerify(item[1]);
-        }
+    public void a_NewsList_load_test() throws Exception {
+        LoadPageAndVerify(PhotoListURL);
     }
+
+
+
+    @Test
+    public void b_NewsList_HtmlCheck_test() throws Exception {
+        LoadPage(PhotoListURL);
+//        Check(NewsList_gspec);
+    }
+
+
+
+/*
+    @Test
+    public void c_testImageDisplayed_test() throws Exception {
+        boolean error_status = true;
+        ExtentReports extent = NewReport();
+        ExtentTest extentTest = extent.startTest("c_testImageDisplayed_test", "Test for all images is loaded");
+
+        LoadPage(PhotoListURL);
+        if (browser.findElement(By.xpath(NewsList_main_news_Image)).isDisplayed()) {
+            extentTest.log(LogStatus.INFO, "Image is load", "image xpath: " + NewsList_main_news_Image);
+        } else {
+            extentTest.log(LogStatus.INFO, "<b>Image is not load</b>", "image xpath: " + NewsList_main_news_Image);
+            error_status = false;
+        }
+
+        for (int i = 1; i < 13; i++) {
+            if (browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/span/img")).isDisplayed()) {
+                extentTest.log(LogStatus.INFO, "Image is load", "image xpath: " + "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/span/img");
+            } else {
+                extentTest.log(LogStatus.INFO, "<b>Image is not load</b>", "image xpath: " + "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/span/img");
+                error_status = false;
+            }
+        }
+
+        if (error_status) extentTest.log(LogStatus.PASS, "All images will load, without errors");
+        else extentTest.log(LogStatus.FAIL, "<b>Some images is not load</b>");
+
+        extent.endTest(extentTest);
+        extent.flush();
+    }
+*/
 
 
 

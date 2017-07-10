@@ -1,32 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/layout-1-screenshot.png" afterPath="$PROJECT_DIR$/target/layout-1-screenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/PageElement.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/PageElement.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/HomePage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/HomePage_test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/1--layout.html" afterPath="$PROJECT_DIR$/target/1--layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/1--layout.json" afterPath="$PROJECT_DIR$/target/1--layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/galen-report.js" afterPath="$PROJECT_DIR$/target/galen-report.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/handlebars-v2.0.0.js" afterPath="$PROJECT_DIR$/target/handlebars-v2.0.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jquery-1.11.2.min.js" afterPath="$PROJECT_DIR$/target/jquery-1.11.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/report.css" afterPath="$PROJECT_DIR$/target/report.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/report.html" afterPath="$PROJECT_DIR$/target/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/report.json" afterPath="$PROJECT_DIR$/target/report.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tablesorter.css" afterPath="$PROJECT_DIR$/target/tablesorter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tablesorter.js" afterPath="$PROJECT_DIR$/target/tablesorter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/specs/news_Page.spec" afterPath="$PROJECT_DIR$/src/test/resources/specs/news_Page.spec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/specs/news_Page.spec" afterPath="$PROJECT_DIR$/target/test-classes/specs/news_Page.spec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/specs/photoReport_list.spec" afterPath="$PROJECT_DIR$/target/test-classes/specs/photoReport_list.spec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/specs/photoReport_page.spec" afterPath="$PROJECT_DIR$/target/test-classes/specs/photoReport_page.spec" />
     </list>
-=======
-    <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,13 +38,8 @@
       <file leaf-file-name="testing.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing.xml">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-=======
             <state relative-caret-position="51">
               <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
               <folding />
             </state>
           </provider>
@@ -63,13 +48,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-=======
             <state relative-caret-position="1564">
               <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
               <folding />
             </state>
           </provider>
@@ -94,17 +74,9 @@
       <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="23" column="82" lean-forward="false" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
               <folding />
-=======
-            <state relative-caret-position="561">
-              <caret line="36" column="115" lean-forward="false" selection-start-line="36" selection-start-column="98" selection-end-line="36" selection-end-column="115" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
             </state>
           </provider>
         </entry>
@@ -112,29 +84,55 @@
       <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="122" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
+                <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+                <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+                <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
                 <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsPage_test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewsPage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.523888">
-              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-              <folding />
-=======
-            <state relative-caret-position="578">
-              <caret line="84" column="61" lean-forward="false" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
+            <state relative-caret-position="425">
+              <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
               <folding>
-                <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
+                <element signature="method#getLinks#0;class#NewsPage_test#0" expanded="false" />
               </folding>
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoReportList_test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportList_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="112" column="2" lean-forward="false" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
+              <folding>
+                <element signature="method#setUp#0;class#PhotoReportList_test#0" expanded="false" />
+                <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
+                <marker date="1499680831312" expanded="false" signature="2686:4086" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoReportPage_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding>
+                <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
+                <element signature="method#setUp#0;class#PhotoReportPage_test#0" expanded="false" />
+                <element signature="method#a_Open_Article_Page_test#0;class#PhotoReportPage_test#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,46 +140,9 @@
       <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
-=======
-            <state relative-caret-position="2023">
-              <caret line="360" column="62" lean-forward="false" selection-start-line="360" selection-start-column="62" selection-end-line="360" selection-end-column="62" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
-                <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
-                <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
-                <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
-                <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
-                <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
-                <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
-                <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-<<<<<<< HEAD
-                <element signature="e#4810#4811#0" expanded="true" />
-                <element signature="e#4859#4860#0" expanded="true" />
-=======
-                <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-                <element signature="e#4781#4782#0" expanded="false" />
-                <element signature="e#4830#4831#0" expanded="false" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-                <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
-                <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
-                <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
-                <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
-                <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-                <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-                <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
-                <element signature="e#8621#8622#0" expanded="false" />
-                <element signature="e#8668#8669#0" expanded="false" />
-                <element signature="method#Check#0;class#PageElement#0" expanded="false" />
-                <element signature="method#IsImageDisplayed#0;class#PageElement#0" expanded="false" />
-                <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
-                <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
-                <element signature="method#IsNotDisplayed#0;class#PageElement#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="832">
+              <caret line="363" column="62" lean-forward="false" selection-start-line="363" selection-start-column="62" selection-end-line="363" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,10 +172,12 @@
         <option value="$PROJECT_DIR$/src/test/java/HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
       </list>
     </option>
   </component>
@@ -228,7 +191,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -246,18 +209,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a42gazeta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a42gazeta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="a42gazeta" />
@@ -310,12 +265,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-<<<<<<< HEAD
-=======
       <pane id="PackagesPane" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -516,6 +466,43 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="erlFlags" value="" />
+      <option name="moduleAndFunction" value="" />
+      <option name="params" value="" />
+      <option name="useTestCodePath" value="false" />
+      <option name="workDirectory" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="ErlangUnitRunConfigurationType" factoryName="Erlang Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="workDirectory" />
+      <module />
+      <option name="functionNames">
+        <set />
+      </option>
+      <option name="kind" value="MODULE" />
+      <option name="moduleNames">
+        <set />
+      </option>
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -599,12 +586,52 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="RebarEunitRunConfigurationType" factoryName="Erlang Rebar Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="command" value="eunit" />
+      <option name="skipDependencies" value="true" />
+      <module />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -635,6 +662,36 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HomePage_test.b_NewsList_HtmlCheck_test" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.HomePage_test" />
@@ -645,9 +702,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.NewsPage_test.qwe" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HomePage_test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HomePage_test.c_testImageDisplayed_test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HomePage_test.testImageShown" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HomePage_test.c_testImageDisplayed_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HomePage_test.testImageShown" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HomePage_test" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.HomePage_test.b_NewsList_HtmlCheck_test" />
       </list>
     </recent_temporary>
@@ -686,14 +743,8 @@
       <projects_view />
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-=======
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -706,98 +757,71 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 10h 49m 25s.xml">
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 06h 57m 15s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 01m 03s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 14m 58s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 15m 25s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 32m 56s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 34m 02s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 37m 24s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePage_test_c_testImageDisplayed_test - 2017.07.04 at 07h 48m 16s.xml">
+      <configuration name="HomePage_test.c_testImageDisplayed_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsPage_test_qwe - 2017.07.10 at 16h 19m 23s.xml">
       <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 06m 47s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 08m 49s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 10m 31s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 13m 03s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 15m 43s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 22m 10s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 25m 33s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 28m 48s.xml">
-      <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NewsPage_test_qwe - 2017.07.04 at 11h 30m 53s.xml">
+    <history-entry file="NewsPage_test_qwe - 2017.07.10 at 16h 23m 36s.xml">
       <configuration name="NewsPage_test.qwe" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-=======
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-=======
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3023622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16470589" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16509435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-<<<<<<< HEAD
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3023622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -818,66 +842,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
-            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
-            <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4781#4782#0" expanded="false" />
-            <element signature="e#4830#4831#0" expanded="false" />
-            <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
-            <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
-            <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
-            <element signature="method#NewReport#0;class#PageElement#0" expanded="false" />
-            <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8668#8669#0" expanded="false" />
-            <element signature="method#Check#0;class#PageElement#0" expanded="false" />
-            <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
-            <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsNotDisplayed#0;class#PageElement#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-    <entry file="file://$PROJECT_DIR$/testing.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -897,14 +866,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-=======
         <state relative-caret-position="0">
           <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -914,39 +881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
-            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
-            <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-<<<<<<< HEAD
-            <element signature="e#4810#4811#0" expanded="true" />
-            <element signature="e#4859#4860#0" expanded="true" />
-=======
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4781#4782#0" expanded="false" />
-            <element signature="e#4830#4831#0" expanded="false" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-            <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
-            <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
-            <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
-            <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8668#8669#0" expanded="false" />
-            <element signature="method#Check#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsImageDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
-            <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsNotDisplayed#0;class#PageElement#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -970,9 +905,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -992,14 +925,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-=======
         <state relative-caret-position="0">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1009,39 +940,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
-            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
-            <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-<<<<<<< HEAD
-            <element signature="e#4810#4811#0" expanded="true" />
-            <element signature="e#4859#4860#0" expanded="true" />
-=======
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4781#4782#0" expanded="false" />
-            <element signature="e#4830#4831#0" expanded="false" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-            <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
-            <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
-            <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
-            <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8668#8669#0" expanded="false" />
-            <element signature="method#Check#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsImageDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
-            <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsNotDisplayed#0;class#PageElement#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,9 +964,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,14 +984,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1120,9 +1015,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,14 +1035,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-=======
         <state relative-caret-position="0">
           <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1175,9 +1066,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,14 +1086,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-=======
         <state relative-caret-position="0">
           <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1230,9 +1117,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,14 +1137,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-=======
         <state relative-caret-position="0">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1285,9 +1168,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="134" column="22" lean-forward="false" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,14 +1188,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-=======
         <state relative-caret-position="0">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1322,14 +1201,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-=======
         <state relative-caret-position="0">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
         </state>
@@ -1365,13 +1242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing.xml">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-=======
         <state relative-caret-position="51">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
           <folding />
         </state>
       </provider>
@@ -1390,14 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -1412,14 +1276,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="122" selection-end-column="5" />
-          <folding>
-            <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
-=======
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1564">
@@ -1428,83 +1284,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="115" lean-forward="false" selection-start-line="36" selection-start-column="98" selection-end-line="36" selection-end-column="115" />
-          <folding>
-            <element signature="imports" expanded="false" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
-=======
-        <state relative-caret-position="2023">
-          <caret line="360" column="62" lean-forward="false" selection-start-line="360" selection-start-column="62" selection-end-line="360" selection-end-column="62" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#ContentText#0;class#PageElement#0" expanded="false" />
-            <element signature="method#getMethodName#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialDateAdd#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialTags#0;class#PageElement#0" expanded="false" />
-            <element signature="method#MaterialElementPosition#0;class#PageElement#0" expanded="false" />
-            <element signature="method#JSPageErrors#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#SendKeys#0;class#PageElement#0" expanded="false" />
-<<<<<<< HEAD
-            <element signature="e#4810#4811#0" expanded="true" />
-            <element signature="e#4859#4860#0" expanded="true" />
-=======
-            <element signature="method#Click#0;class#PageElement#0" expanded="false" />
-            <element signature="e#4781#4782#0" expanded="false" />
-            <element signature="e#4830#4831#0" expanded="false" />
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
-            <element signature="method#GetAttribute#0;class#PageElement#0" expanded="false" />
-            <element signature="method#CreateReport#0;class#PageElement#0" expanded="false" />
-            <element signature="method#GetAllLinks#0;class#PageElement#0" expanded="false" />
-            <element signature="method#Pause#0;class#PageElement#0" expanded="false" />
-            <element signature="method#PageLoadTime#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPageAndVerify#0;class#PageElement#0" expanded="false" />
-            <element signature="method#LoadPage#0;class#PageElement#0" expanded="false" />
-            <element signature="e#8621#8622#0" expanded="false" />
-            <element signature="e#8668#8669#0" expanded="false" />
-            <element signature="method#Check#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsImageDisplayed#0;class#PageElement#0" expanded="false" />
-            <element signature="method#RefreshPage#0;class#PageElement#0" expanded="false" />
-            <element signature="method#HoverAndCick#0;class#PageElement#0" expanded="false" />
-            <element signature="method#IsNotDisplayed#0;class#PageElement#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="832">
+          <caret line="363" column="62" lean-forward="false" selection-start-line="363" selection-start-column="62" selection-end-line="363" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
+            <element signature="method#setUp#0;class#PhotoReportPage_test#0" expanded="false" />
+            <element signature="method#a_Open_Article_Page_test#0;class#PhotoReportPage_test#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.523888">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-          <folding />
-=======
-        <state relative-caret-position="578">
-          <caret line="84" column="61" lean-forward="false" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
+        <state relative-caret-position="425">
+          <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
           <folding>
+            <element signature="method#getLinks#0;class#NewsPage_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
           </folding>
->>>>>>> 6dda74d4be95613998a05838259f29f64a97ef8d
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="82" lean-forward="false" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="112" column="2" lean-forward="false" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
+          <folding>
+            <element signature="method#setUp#0;class#PhotoReportList_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
+            <marker date="1499680831312" expanded="false" signature="2686:4086" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

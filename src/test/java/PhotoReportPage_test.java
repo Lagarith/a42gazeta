@@ -50,25 +50,25 @@ import javax.mail.internet.MimeMultipart;
 import static Helpers.Locators.*;
 import static Helpers.PageElement.*;
 
+import static Helpers.PageElement.LoadPageAndVerify;
 
-
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class NewsPage_test extends Settings{
+@FixMethodOrder (MethodSorters.NAME_ASCENDING.NAME_ASCENDING)
+public class PhotoReportPage_test extends Settings {
 
     private static String[][] data = new String[31][2];
 
     private static String[][] getLinks() throws Exception {
         browser.get(NewsListURL);
 
-        Click(NewsList_ShowMore_btn);
-        Click(NewsList_ShowMore_btn);
+        Click(PhotoList_ShowMore_btn);
+        Click(PhotoList_ShowMore_btn);
 
-        for (int i = 1; i < 31; i++) {
+        for (int i = 1; i < 16; i++) {
             String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
             String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
 
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a")).getAttribute("href");
+            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/a/div/div/span")).getText();
+            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/a")).getAttribute("href");
         }
 
         return data;
@@ -98,4 +98,5 @@ public class NewsPage_test extends Settings{
     public static void setDown() throws Exception {
         browser.quit();
     }
+
 }

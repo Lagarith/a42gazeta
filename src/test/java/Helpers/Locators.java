@@ -21,6 +21,7 @@ public class Locators extends Settings {
     //LINKS
     public static final String LoginPage = "http://test-case.vats.atwinta.ru/login/";
     public static final String NewsListURL = "http://gazeta.a42.ru/lenta/news";
+    public static final String PhotoListURL = "http://gazeta.a42.ru/lenta/photos";
 
 
 
@@ -46,6 +47,10 @@ public class Locators extends Settings {
     //NEWS LIST ELEMENTS
     public static final String NewsList_ShowMore_btn = "//*[@id=\"paginate-block\"]/noindex/p/a";
 
+
+
+    //PHOTO REPORT'S LIST ELEMENTS
+    public static final String PhotoList_ShowMore_btn = "//*[@id=\"paginate-block\"]/noindex/p/a";
 
 
 
