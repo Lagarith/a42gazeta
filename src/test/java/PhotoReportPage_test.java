@@ -52,13 +52,13 @@ import static Helpers.PageElement.*;
 
 import static Helpers.PageElement.LoadPageAndVerify;
 
-@FixMethodOrder (MethodSorters.NAME_ASCENDING.NAME_ASCENDING)
+@FixMethodOrder (MethodSorters.NAME_ASCENDING)
 public class PhotoReportPage_test extends Settings {
 
     private static String[][] data = new String[31][2];
 
     private static String[][] getLinks() throws Exception {
-        browser.get(NewsListURL);
+        browser.get(PhotoListURL);
 
         Click(PhotoList_ShowMore_btn);
         Click(PhotoList_ShowMore_btn);
@@ -86,7 +86,7 @@ public class PhotoReportPage_test extends Settings {
 
 
     @Test
-    public void a_Open_Article_Page_test() throws Exception {
+    public void a_Open_Photo_Report_Page_test() throws Exception {
         for (String[] item:data) {
             LoadPageAndVerify(item[1]);
         }

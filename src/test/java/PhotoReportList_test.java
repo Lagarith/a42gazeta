@@ -50,7 +50,7 @@ import javax.mail.internet.MimeMultipart;
 import static Helpers.Locators.*;
 import static Helpers.PageElement.*;
 
-@FixMethodOrder (MethodSorters.NAME_ASCENDING.NAME_ASCENDING)
+@FixMethodOrder (MethodSorters.NAME_ASCENDING)
 public class PhotoReportList_test extends Settings{
 
 
@@ -66,7 +66,7 @@ public class PhotoReportList_test extends Settings{
 
 
     @Test
-    public void a_NewsList_load_test() throws Exception {
+    public void a_Open_Photo_Report_List_test() throws Exception {
         LoadPageAndVerify(PhotoListURL);
     }
 
