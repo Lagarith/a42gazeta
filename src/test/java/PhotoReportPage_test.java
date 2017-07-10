@@ -69,6 +69,7 @@ public class PhotoReportPage_test extends Settings {
 
             data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/a/div/div/span")).getText();
             data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/a")).getAttribute("href");
+                                                       //*[@id="paginate-block"]/div/div[1]/a
         }
 
         return data;
@@ -88,7 +89,8 @@ public class PhotoReportPage_test extends Settings {
     @Test
     public void a_Open_Photo_Report_Page_test() throws Exception {
         for (String[] item:data) {
-            LoadPageAndVerify(item[1]);
+//            LoadPageAndVerify(item[1]);
+            System.out.println(item[1]);
         }
     }
 

@@ -1,0 +1,3488 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ExtentReports Library 2.40.2 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
+Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
+Documentation: http://extentreports.relevantcodes.com 
+-->
+
+<meta charset='UTF-8' /> 
+<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+<meta name='robots' content='noodp, noydir' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<title>
+ExtentReports 2.0
+</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href='https://cdn.rawgit.com/anshooarora/extentreports/e4f8ea1de961161791c01b99a71a1e17f81125cf/cdn/extent.css' type='text/css' rel='stylesheet' />
+
+<style>
+
+            
+                
+            
+        
+</style>
+</head>
+
+
+<body class='extent standard hide-overflow'>
+<!-- nav -->
+<nav>
+<div class='logo-container'>
+<a class='logo-content' href='http://extentreports.relevantcodes.com'>
+<span>ExtentReports</span>
+</a>
+<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
+</div>
+<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+<li class='analysis waves-effect'><a href='#!' class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a></li>
+</ul>
+<span class='report-name'>Automation Report</span> <span class='report-headline'></span>
+<ul class='right hide-on-med-and-down nav-right'>
+<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
+<i class='mdi-hardware-desktop-windows'></i>
+</li>
+<li>
+<span class='suite-started-time'>2017-07-10 17:33:40</span>
+</li>
+<li>
+<span>v2.40.2</span>
+</li>
+</ul>
+</nav>
+<!-- /nav -->
+
+<!-- container -->
+<div class='container'>
+
+<!-- dashboard -->
+<div id='dashboard-view' class='row'>
+<div class='time-totals'>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-tests'> 
+<span class='panel-name'>Total Tests</span> 
+<span class='total-tests'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-steps'> 
+<span class='panel-name'>Total Steps</span> 
+<span class='total-steps'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-current'> 
+<span class='panel-name'>Total Time Taken (Current Run)</span> 
+<span class='suite-total-time-current-value panel-lead'>0h 8m 42s+233ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-overall'> 
+<span class='panel-name'>Total Time Taken (Overall)</span> 
+<span class='suite-total-time-overall-value panel-lead'>-312h -18731m -1123915s+-83ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-start-time'>
+<div class='card accent green-accent'> 
+<span class='panel-name'>Start</span> 
+<span class='panel-lead suite-started-time'>2017-07-10 17:24:58</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-end-time'>
+<div class='card accent pink-accent'> 
+<span class='panel-name'>End</span> 
+<span class='panel-lead suite-ended-time'>2017-07-10 17:33:40</span> 
+</div> 
+</div>
+</div>
+<div class='charts'>
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Tests View</span>
+</div> 
+<div class='panel-setting modal-trigger test-count-setting right'>
+<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='test-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+</div> 
+<div>
+<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div> 
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Steps View</span>
+</div> 
+<div class='panel-setting modal-trigger step-status-filter right'>
+<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='step-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>
+</div> 
+<div>
+<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div>
+<div class='col s12 m12 l4 fh'> 
+<div class='card-panel'> 
+<span class='panel-name'>Pass Percentage</span> 
+<span class='pass-percentage panel-lead'></span> 
+<div class='progress light-blue lighten-3'> 
+<div class='determinate light-blue'></div> 
+</div> 
+</div> 
+</div>
+</div>
+<div class='system-view'>
+<div class='col l4 m12 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Environment</span>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>1.8.0_121</td>
+</tr>
+<tr>
+<td>Host Name</td>
+<td>DESKTOP-GRITLNG</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- /dashboard -->
+
+<!-- tests -->
+<div id='test-view' class='row _addedTable'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Tests</h5>
+</div>
+<div class='card-panel filters'>
+<div>
+<a data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#' class='dropdown-button button tests-toggle'><i class='mdi-action-subject icon'></i></a>
+<ul id='tests-toggle' class='dropdown-content'>
+<li class='pass'><a href='#!'>Pass</a></li>
+<li class='fail'><a href='#!'>Fail</a></li>
+<li class='warning'><a href='#!'>Warning</a></li>
+<li class='skip'><a href='#!'>Skip</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a id='clear-filters' alt='Clear Filters' title='Clear Filters'><i class='mdi-navigation-close icon'></i></a>
+</div>
+<div>&nbsp;&middot;&nbsp;</div>
+<div>
+<a id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'><i class='mdi-action-track-changes icon'></i></a>
+</div>
+<div>
+<a id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters' class='enabled'><i class='mdi-navigation-refresh icon'></i></i></a>
+</div>
+<div>&nbsp;&middot;</div>
+<div class='search' alt='Search Tests' title='Search Tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v no-margin-v'>
+<div class='wrapper'>
+<ul id='test-collection' class='test-collection'>
+<li class='collection-item test displayed active pass ' extentid='6dd5bd5d-b3fe-4625-8426-d44581831f9f'>
+<div class='test-head'>
+<span class='test-name'>a_NewsList_load_test - Open: http://gazeta.a42.ru/lenta/news </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:24:58</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:25:03</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:24:58</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:02</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:25:03</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='969f14e3-489f-419d-af23-b8d519eec72e'>
+<div class='test-head'>
+<span class='test-name'>b_NewsList_HtmlCheck_test - Page check by galen </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:25:10</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:25:16</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'>Page check by galen</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:25:16</td>
+<td class='step-details'><a href="C:\tests\a42gazeta\target\1--layout.html">Galen report</a></td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='bca1c585-727f-4dfe-9fc1-057362b4755e'>
+<div class='test-head'>
+<span class='test-name'>c_testImageDisplayed_test </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:25:16</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:25:24</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'>Test for all images is loaded</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>StepName</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: /html/body/div[1]/div[5]/div[1]/div[1]/div[2]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[1]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[2]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[3]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[4]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[5]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[6]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[7]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[8]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[9]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[10]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[11]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-name'>Image is load</td>
+<td class='step-details'>image xpath: //*[@id="paginate-block"]/div/div[12]/p[1]/a/span/img</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:25:24</td>
+<td class='step-details'>All images will load, without errors</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='828cf299-ad3e-4510-a9ad-636d08b35f7e'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:25:55</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:25:56</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:55</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:25:55</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:55</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='e7c91420-cd0a-4680-a3b3-8a5bc7918e31'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/devushka-pogibla-v-avarii-vo-vremya-pryamogo-efira-na-facebo </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:25:57</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:05</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/devushka-pogibla-v-avarii-vo-vremya-pryamogo-efira-na-facebo</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:25:57</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/devushka-pogibla-v-avarii-vo-vremya-pryamogo-efira-na-facebo</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:04</td>
+<td class='step-details'>Load time = 7sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:05</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='98457ceb-119f-47d1-bc48-6944ea54eeae'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kuzbasse-dve-devushki-upali-s-obryva </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:05</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:10</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kuzbasse-dve-devushki-upali-s-obryva</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:05</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kuzbasse-dve-devushki-upali-s-obryva</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:09</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:10</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='3df2ec92-1cb1-46fc-8238-693821884fbe'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/kuzbassovec-zapinal-policejskogo-v-mashine </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:10</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:15</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/kuzbassovec-zapinal-policejskogo-v-mashine</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:10</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/kuzbassovec-zapinal-policejskogo-v-mashine</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:14</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:15</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='a1f33de9-42c0-4ebe-aa8a-9edc837ac9ea'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/stalo-izvestno-kak-podorozhaet-benzin-v-2017-godu </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:15</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:19</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/stalo-izvestno-kak-podorozhaet-benzin-v-2017-godu</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:15</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/stalo-izvestno-kak-podorozhaet-benzin-v-2017-godu</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:18</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:19</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='5100dab7-fe51-47ec-a804-b8d9975293b7'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kemerove-okolo-promenada-3-nashli-telo-zhenshiny </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:19</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:23</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kemerove-okolo-promenada-3-nashli-telo-zhenshiny</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:19</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kemerove-okolo-promenada-3-nashli-telo-zhenshiny</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:22</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:23</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='25fccd94-dd82-45dd-a97e-5a4fc741a304'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/nakanune-dnya-semi-v-kemerove-startovala-programma-molodaya </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:23</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:28</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/nakanune-dnya-semi-v-kemerove-startovala-programma-molodaya</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:23</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/nakanune-dnya-semi-v-kemerove-startovala-programma-molodaya</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:27</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:28</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='26bc20d4-ca28-4d87-ac27-b57e6c368b0a'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/kemerovskie-spasateli-prishli-na-pomosh-dvum-invalidam </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:28</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:33</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/kemerovskie-spasateli-prishli-na-pomosh-dvum-invalidam</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:28</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/kemerovskie-spasateli-prishli-na-pomosh-dvum-invalidam</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:32</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:33</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='7af37775-a908-4342-b7ad-04f8d4110919'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/prohlada-grad-i-veter-kakaya-pogoda-zhdyot-kuzbassovcev-na-e </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:33</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:38</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/prohlada-grad-i-veter-kakaya-pogoda-zhdyot-kuzbassovcev-na-e</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:33</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/prohlada-grad-i-veter-kakaya-pogoda-zhdyot-kuzbassovcev-na-e</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:37</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:38</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='0629f8a0-5e94-4aa9-b14c-468dc8939669'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/putin-poruchil-razobratsya-s-nizhnetagilskoj-borzotoj </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:38</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:42</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/putin-poruchil-razobratsya-s-nizhnetagilskoj-borzotoj</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:38</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/putin-poruchil-razobratsya-s-nizhnetagilskoj-borzotoj</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:41</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:42</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='b25c2294-6d59-4045-a312-3f82d7bd60cc'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/novokuznechanin-pritvorilsya-direktorom-otelya-chtoby-pohiti </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:42</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:48</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/novokuznechanin-pritvorilsya-direktorom-otelya-chtoby-pohiti</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:42</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/novokuznechanin-pritvorilsya-direktorom-otelya-chtoby-pohiti</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:47</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:48</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='bde63bbd-9660-47f0-86fb-833a8c6708d3'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-rossii-poyavilsya-smartfon-s-dvumya-operacionnymi-sistemam </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:48</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:53</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-rossii-poyavilsya-smartfon-s-dvumya-operacionnymi-sistemam</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:48</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-rossii-poyavilsya-smartfon-s-dvumya-operacionnymi-sistemam</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:52</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:53</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='9b4c5bb8-4e2b-4d04-9241-fb25624db0af'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/predpolagaemomu-ubijce-propavshej-novokuznechanki-predyavili </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:53</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:26:58</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/predpolagaemomu-ubijce-propavshej-novokuznechanki-predyavili</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:53</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/predpolagaemomu-ubijce-propavshej-novokuznechanki-predyavili</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:57</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:26:58</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active warning ' extentid='29d2c347-ae82-4ca6-8962-6c0f9224faf8'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kemerove-direktor-turfirmy-obmanula-klientov-na-800-000-ru </span>
+<span class='test-status label right outline capitalize warning'>warning</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:26:58</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:24</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 26s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kemerove-direktor-turfirmy-obmanula-klientov-na-800-000-ru</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:26:58</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kemerove-direktor-turfirmy-obmanula-klientov-na-800-000-ru</td>
+</tr>
+<tr>
+<td class='status warning' title='warning' alt='warning'><i class='mdi-alert-warning'></i></td>
+<td class='timestamp'>17:27:23</td>
+<td class='step-details'>Load time: 24sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:24</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='be6919bd-d781-4bce-9d7d-c005a7ffd682'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kemerove-ustanovyat-dve-kamery-fotofiksacii </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:24</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:29</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kemerove-ustanovyat-dve-kamery-fotofiksacii</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:24</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kemerove-ustanovyat-dve-kamery-fotofiksacii</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:28</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:29</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='2bc018c9-6f6d-4818-abf2-75c6d24097a0'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-rossii-prodavcam-zapretyat-zadavat-lishnie-voprosy </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:29</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:34</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-rossii-prodavcam-zapretyat-zadavat-lishnie-voprosy</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:29</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-rossii-prodavcam-zapretyat-zadavat-lishnie-voprosy</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:33</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:34</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='0a22275f-11ac-41dc-9dd6-90908102e941'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/propavshego-v-chelyabinskoj-oblasti-rebyonka-ubili </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:34</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:38</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/propavshego-v-chelyabinskoj-oblasti-rebyonka-ubili</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:34</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/propavshego-v-chelyabinskoj-oblasti-rebyonka-ubili</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:37</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:38</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='7695a98b-29d4-4e15-985c-047623f0cf06'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kemerove-tryohletnij-rebyonok-vypal-iz-okna-devyatogo-etaz </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:38</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:43</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kemerove-tryohletnij-rebyonok-vypal-iz-okna-devyatogo-etaz</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:38</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kemerove-tryohletnij-rebyonok-vypal-iz-okna-devyatogo-etaz</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:42</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:43</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='03c5f17c-f876-42d2-935b-15ac2d65d9b6'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/kuzbassovcev-prosyat-pomoch-opoznat-pogibshego-muzhchinu </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:43</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:48</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/kuzbassovcev-prosyat-pomoch-opoznat-pogibshego-muzhchinu</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:43</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/kuzbassovcev-prosyat-pomoch-opoznat-pogibshego-muzhchinu</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:47</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:48</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='c944dcc4-9615-43bd-9e7b-1b68db429bd2'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kuzbasse-propal-39-letnij-muzhchina </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:48</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:27:52</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kuzbasse-propal-39-letnij-muzhchina</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:48</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kuzbasse-propal-39-letnij-muzhchina</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:51</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:27:52</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='e0dbcb02-d61f-4e41-b31f-7c23106b23a1'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/vladimir-putin-rasskazal-kakie-avtomobili-emu-nravyatsya </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:27:52</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:02</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/vladimir-putin-rasskazal-kakie-avtomobili-emu-nravyatsya</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:27:52</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/vladimir-putin-rasskazal-kakie-avtomobili-emu-nravyatsya</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:01</td>
+<td class='step-details'>Load time = 9sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:02</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='998509b2-d6d8-4b8b-b1fd-e47bb8e7cd98'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kuzbasskoj-bolnice-vnedrili-unikalnuyu-tehnologiyu-lecheni </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:02</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:06</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kuzbasskoj-bolnice-vnedrili-unikalnuyu-tehnologiyu-lecheni</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:02</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kuzbasskoj-bolnice-vnedrili-unikalnuyu-tehnologiyu-lecheni</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:05</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:06</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='8671c285-c495-47b4-9930-50d9f617becd'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/zamministra-energetiki-rossii-prinyal-uchastie-v-otkrytii-dv </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:07</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:11</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/zamministra-energetiki-rossii-prinyal-uchastie-v-otkrytii-dv</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:07</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/zamministra-energetiki-rossii-prinyal-uchastie-v-otkrytii-dv</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:10</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:11</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='6f532ac5-7b82-4999-8132-6e8873814e29'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-kemerove-po-vine-pyanogo-voditelya-stolknulis-pyat-avtomob </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:11</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:16</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-kemerove-po-vine-pyanogo-voditelya-stolknulis-pyat-avtomob</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:11</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-kemerove-po-vine-pyanogo-voditelya-stolknulis-pyat-avtomob</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:15</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:16</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='d42c3839-3937-452b-888e-0398345618ba'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/na-problemnom-perekryostke-v-centre-kemerova-zarabotal-sveto </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:16</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:21</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/na-problemnom-perekryostke-v-centre-kemerova-zarabotal-sveto</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:16</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/na-problemnom-perekryostke-v-centre-kemerova-zarabotal-sveto</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:20</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:21</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='0216bc6b-e16f-4089-966a-19434fd41ab4'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/eksperty-nazvali-pyat-luchshih-avtomobilej-2017-goda </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:21</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:26</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/eksperty-nazvali-pyat-luchshih-avtomobilej-2017-goda</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:21</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/eksperty-nazvali-pyat-luchshih-avtomobilej-2017-goda</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:25</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:26</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='c9947788-4669-48f6-a3b0-3a8af7532a01'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/vosem-chelovek-postradali-v-lobovom-stolknovenii-na-kuzbassk </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:26</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:31</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/vosem-chelovek-postradali-v-lobovom-stolknovenii-na-kuzbassk</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:26</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/vosem-chelovek-postradali-v-lobovom-stolknovenii-na-kuzbassk</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:30</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:31</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='b868081e-ee7c-4547-97fe-5016a4f4351a'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/uchyonye-zayavili-chto-lyudi-skoro-ne-smogut-ispytyvat-schas </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:31</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:36</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/uchyonye-zayavili-chto-lyudi-skoro-ne-smogut-ispytyvat-schas</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:31</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/uchyonye-zayavili-chto-lyudi-skoro-ne-smogut-ispytyvat-schas</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:35</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:36</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='032e91cc-35a5-452e-86a2-8c1e5fd82ed6'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/minzdrav-predlozhil-ogranichit-demonstraciyu-alkogolnoj-prod </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:36</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:41</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/minzdrav-predlozhil-ogranichit-demonstraciyu-alkogolnoj-prod</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:36</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/minzdrav-predlozhil-ogranichit-demonstraciyu-alkogolnoj-prod</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:40</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:41</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='4e7e5159-2a5a-4182-8be0-f06d71a26cee'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/iz-za-stolknoveniya-otechestvennyh-avto-na-perekryostke-v-ke </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:41</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:47</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/iz-za-stolknoveniya-otechestvennyh-avto-na-perekryostke-v-ke</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:41</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/iz-za-stolknoveniya-otechestvennyh-avto-na-perekryostke-v-ke</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:46</td>
+<td class='step-details'>Load time = 5sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:47</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='8b161402-2df2-49de-aa1a-cc68480cc60d'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Article_Page_test - Open: http://gazeta.a42.ru/lenta/news/v-rossii-vveli-novye-pravila-registracii-avtomobilej </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:28:48</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:28:52</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/news/v-rossii-vveli-novye-pravila-registracii-avtomobilej</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:48</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/news/v-rossii-vveli-novye-pravila-registracii-avtomobilej</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:28:51</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:28:52</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='91c5ca43-0ec3-4067-aa27-62f5c6dd2e4f'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_List_test - Open: http://gazeta.a42.ru/lenta/photos </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:29:57</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:30:02</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:29:57</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:01</td>
+<td class='step-details'>Load time = 3sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:30:02</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='a366d480-d78a-4662-9678-ae7b7da24e61'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:30:35</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:30:36</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:35</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:30:35</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:35</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='17581004-6512-49b4-b910-eab48e90802f'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/ivan-kupala-chto-proishodilo-u-fontana </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:30:37</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:30:46</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/ivan-kupala-chto-proishodilo-u-fontana</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:37</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/ivan-kupala-chto-proishodilo-u-fontana</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:45</td>
+<td class='step-details'>Load time = 8sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:30:46</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='4db7fe4e-4289-48b3-8f0f-fa909e11ef6d'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/ostrov-kemerovskij-progulka-na-zakate </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:30:47</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:30:52</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/ostrov-kemerovskij-progulka-na-zakate</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:47</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/ostrov-kemerovskij-progulka-na-zakate</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:51</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:30:52</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active warning ' extentid='a9bd16d9-a64c-4c11-9c19-44d13ae7b010'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/12-ispytanij-kak-proshla-bitva-vo-imya-dobra </span>
+<span class='test-status label right outline capitalize warning'>warning</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:30:53</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:31:19</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 26s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/12-ispytanij-kak-proshla-bitva-vo-imya-dobra</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:30:53</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/12-ispytanij-kak-proshla-bitva-vo-imya-dobra</td>
+</tr>
+<tr>
+<td class='status warning' title='warning' alt='warning'><i class='mdi-alert-warning'></i></td>
+<td class='timestamp'>17:31:18</td>
+<td class='step-details'>Load time: 25sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:31:19</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='1b7f2166-f941-4450-86b5-dcbd3c51f7eb'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/rok-i-drajv-muzykalnyj-festival-nad-zemlyoj-2017 </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:31:20</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:31:25</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/rok-i-drajv-muzykalnyj-festival-nad-zemlyoj-2017</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:20</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/rok-i-drajv-muzykalnyj-festival-nad-zemlyoj-2017</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:24</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:31:25</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='2b9b4fe4-7dcf-4d9f-9b27-7d68d4caa282'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/kemerovskie-kryshi-kakim-my-uvideli-gorod-s-vysoty </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:31:25</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:31:31</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/kemerovskie-kryshi-kakim-my-uvideli-gorod-s-vysoty</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:25</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/kemerovskie-kryshi-kakim-my-uvideli-gorod-s-vysoty</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:30</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:31:31</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='39e3ab21-c8be-479a-b39d-a4ab27294d80'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/vypusknoj-2017-vremya-vstrechat-rassvet </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:31:31</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:31:37</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/vypusknoj-2017-vremya-vstrechat-rassvet</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:31</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/vypusknoj-2017-vremya-vstrechat-rassvet</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:36</td>
+<td class='step-details'>Load time = 5sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:31:37</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='8e2cf908-7590-4e82-81a7-823b99a89997'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/detalizaciya-2017-v-poiskah-cheloveka-iz-kemerova </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:31:37</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:31:42</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/detalizaciya-2017-v-poiskah-cheloveka-iz-kemerova</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:37</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/detalizaciya-2017-v-poiskah-cheloveka-iz-kemerova</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:41</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:31:42</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active warning ' extentid='95013dcb-c668-47f1-bcb3-9d0faf41e68d'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/davajte-zhit-druzhno-v-kemerove-proshyol-fleshmob-golub-mira </span>
+<span class='test-status label right outline capitalize warning'>warning</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:31:43</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:32:18</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 35s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/davajte-zhit-druzhno-v-kemerove-proshyol-fleshmob-golub-mira</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:31:43</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/davajte-zhit-druzhno-v-kemerove-proshyol-fleshmob-golub-mira</td>
+</tr>
+<tr>
+<td class='status warning' title='warning' alt='warning'><i class='mdi-alert-warning'></i></td>
+<td class='timestamp'>17:32:17</td>
+<td class='step-details'>Load time: 34sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:32:18</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active warning ' extentid='22cfd124-f318-4a09-9267-4b98e3f2f53e'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/puteshestvie-k-naskalnym-risunkam-krasota-prirody-severa-kuz </span>
+<span class='test-status label right outline capitalize warning'>warning</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:32:18</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:32:31</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 13s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/puteshestvie-k-naskalnym-risunkam-krasota-prirody-severa-kuz</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:32:18</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/puteshestvie-k-naskalnym-risunkam-krasota-prirody-severa-kuz</td>
+</tr>
+<tr>
+<td class='status warning' title='warning' alt='warning'><i class='mdi-alert-warning'></i></td>
+<td class='timestamp'>17:32:30</td>
+<td class='step-details'>Load time: 11sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:32:31</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='8400906a-4317-45fd-b791-104d34773a47'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/zavod-obshego-rezhima-kak-ustroeno-proizvodstvo-v-ik-40 </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:32:31</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:32:39</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/zavod-obshego-rezhima-kak-ustroeno-proizvodstvo-v-ik-40</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:32:31</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/zavod-obshego-rezhima-kak-ustroeno-proizvodstvo-v-ik-40</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:32:38</td>
+<td class='step-details'>Load time = 7sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:32:39</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='55be237b-085c-40f6-b359-4e1e21bd80a0'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/den-goroda-2017-luchshie-momenty-prazdnika </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:32:39</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:32:44</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/den-goroda-2017-luchshie-momenty-prazdnika</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:32:39</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/den-goroda-2017-luchshie-momenty-prazdnika</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:32:43</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:32:44</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active warning ' extentid='3999560c-bcd9-4b6c-bf3d-c8c4976a8537'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/salyut-v-kemerove-kak-zavershilsya-den-goroda-2017 </span>
+<span class='test-status label right outline capitalize warning'>warning</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:32:44</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:04</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 20s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/salyut-v-kemerove-kak-zavershilsya-den-goroda-2017</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:32:44</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/salyut-v-kemerove-kak-zavershilsya-den-goroda-2017</td>
+</tr>
+<tr>
+<td class='status warning' title='warning' alt='warning'><i class='mdi-alert-warning'></i></td>
+<td class='timestamp'>17:33:03</td>
+<td class='step-details'>Load time: 18sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:33:04</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='d503d9f3-7c62-44ae-8c3d-415057927c04'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/druzhba-narodov-kak-v-kemerove-proshlo-shestvie </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:04</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:12</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/druzhba-narodov-kak-v-kemerove-proshlo-shestvie</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:04</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/druzhba-narodov-kak-v-kemerove-proshlo-shestvie</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:11</td>
+<td class='step-details'>Load time = 7sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:33:12</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='2b3a1630-a731-407f-a696-959680315c4e'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/iz-kraski-v-penu-festival-krasok-megaholi </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:13</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:18</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/iz-kraski-v-penu-festival-krasok-megaholi</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:13</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/iz-kraski-v-penu-festival-krasok-megaholi</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:17</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:33:18</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='242ae13b-4da4-4c87-a45c-10b1e91221f6'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: http://gazeta.a42.ru/lenta/photos/turnir-po-plavaniyu-luchshie-momenty-oblastnyh-sorevnovanij </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:18</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:23</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - http://gazeta.a42.ru/lenta/photos/turnir-po-plavaniyu-luchshie-momenty-oblastnyh-sorevnovanij</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:18</td>
+<td class='step-details'>Trying to open - http://gazeta.a42.ru/lenta/photos/turnir-po-plavaniyu-luchshie-momenty-oblastnyh-sorevnovanij</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:22</td>
+<td class='step-details'>Load time = 4sec</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>17:33:23</td>
+<td class='step-details'>Page is loaded</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='0f5053d7-d4e9-4313-9e6c-cefc31bf51d7'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:24</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:25</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:24</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:24</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:24</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='16dc3a7a-09f3-45c7-a8e3-6f0f8028966f'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:25</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:26</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:25</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:25</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:25</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='af11e8df-dcbe-4852-970b-5febe1f79948'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:26</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:27</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:26</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:26</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:26</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='a1914c83-cf67-48b9-85a1-ba2e2a9d2f64'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:27</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:28</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:27</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:27</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:27</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='b34d34f0-40e0-490d-86f5-a052ad578b0a'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:28</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:29</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:28</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:28</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:28</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='0244dc37-dd3a-4fb4-a33d-b31d699f30c6'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:29</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:30</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:29</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:29</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:29</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='db7de176-6acf-47b6-9306-d28f2eaaeb44'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:30</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:31</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:30</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:30</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:30</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='7163ac3e-76d2-48e0-a6d4-697b804bce99'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:31</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:32</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:31</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:31</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:31</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='d07c3a65-d349-4ee5-896d-a63fb1e46efe'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:32</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:33</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:32</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:32</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:32</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='3d20c632-d18a-4ac0-973a-99ada632d8e8'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:33</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:34</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:33</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:33</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:33</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='552fdf0b-878f-4367-bd25-4332087e3608'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:34</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:35</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:34</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:34</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:34</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='bdd811a4-8022-41ce-96d4-14398348ec7c'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:36</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:37</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:36</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:36</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:36</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='40610b75-40ac-44ed-88fe-7b2f65ea61df'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:37</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:38</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:37</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:37</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:37</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='22ece5df-f7f1-4bb1-85ca-8cb5c98c9eaa'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:38</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:39</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+0ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:38</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:38</td>
+<td class='step-details'>Page cannot be opened. StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:38</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='fb4fdd76-678f-4bc0-babc-349f1f4e48b6'>
+<div class='test-head'>
+<span class='test-name'>a_Open_Photo_Report_Page_test - Open: null </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-07-10 17:33:39</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-07-10 17:33:40</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+2ms</span>
+</div>
+<div class='test-desc'>Trying to open page, by url - null</div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:39</td>
+<td class='step-details'>Trying to open - null</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>17:33:39</td>
+<td class='step-details'>Page cannot be opened.
+
+StackTrace:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>17:33:39</td>
+<td class='step-details'>Load time = 0sec</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='test-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='details-name'></h5>
+<div class='details-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /tests -->
+
+<!-- categories -->
+<!-- /categories -->
+
+<!-- exceptions -->
+<!-- /exceptions -->
+
+<!-- testrunner logs -->
+<!-- /testrunner logs -->
+
+</div>
+<!-- /container -->
+
+<!-- test dashboard counts setting -->
+<div id='test-count-setting' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Configure Tests Count Setting</h5> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+<label for='childNodes'>Child Tests Only</label> 
+</div> 
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /test dashboard counts setting -->
+
+<!-- filter for step status -->
+<div id='step-status-filter' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Select status</h5> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
+<label for='step-dashboard-filter-pass'>Pass</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
+<label for='step-dashboard-filter-fail'>Fail</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
+<label for='step-dashboard-filter-fatal'>Fatal</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
+<label for='step-dashboard-filter-error'>Error</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
+<label for='step-dashboard-filter-warning'>Warning</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
+<label for='step-dashboard-filter-skip'>Skipped</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
+<label for='step-dashboard-filter-info'>Info</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
+<label for='step-dashboard-filter-unknown'>Unknown</label> 
+</div>
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /filter for step status -->
+
+<script src='https://cdn.rawgit.com/anshooarora/extentreports/c936a26fc8bb9c5fc0253b5bc6f289e1d14bb595/cdn/extent.js' type='text/javascript'></script>
+
+<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
+<script>
+
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+</script>
+</body>
+</html>
