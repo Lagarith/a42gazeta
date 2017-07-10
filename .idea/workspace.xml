@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/Locators.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/HomePage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/HomePage_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/specs/news_Page.spec" afterPath="$PROJECT_DIR$/src/test/resources/specs/news_Page.spec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/specs/news_Page.spec" afterPath="$PROJECT_DIR$/target/test-classes/specs/news_Page.spec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/specs/photoReport_list.spec" afterPath="$PROJECT_DIR$/target/test-classes/specs/photoReport_list.spec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/specs/photoReport_page.spec" afterPath="$PROJECT_DIR$/target/test-classes/specs/photoReport_page.spec" />
-    </list>
+    <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoReportList_test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PhotoReportList_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportList_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -123,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoReportPage_test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PhotoReportPage_test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="59" column="58" lean-forward="false" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
               <folding>
                 <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
                 <element signature="method#setUp#0;class#PhotoReportPage_test#0" expanded="false" />
@@ -175,9 +160,9 @@
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
       </list>
     </option>
   </component>
@@ -1292,18 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
-            <element signature="method#setUp#0;class#PhotoReportPage_test#0" expanded="false" />
-            <element signature="method#a_Open_Article_Page_test#0;class#PhotoReportPage_test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1344,6 +1317,18 @@
             <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
             <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
             <marker date="1499680831312" expanded="false" signature="2686:4086" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="59" column="58" lean-forward="false" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+          <folding>
+            <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
+            <element signature="method#setUp#0;class#PhotoReportPage_test#0" expanded="false" />
+            <element signature="method#a_Open_Article_Page_test#0;class#PhotoReportPage_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
