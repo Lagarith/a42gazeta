@@ -234,13 +234,13 @@ public class PageElement {
 
         System.out.println(testSuiteName + ". ");
         ExtentReports extent = NewReport();
-        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - " + pageURL);
+        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - <a>" + pageURL + "</a>");
 
         boolean error_status = true;
         long start = 0;
 
         System.out.println("Trying to open - " + pageURL);
-        extentTest.log(LogStatus.INFO, "Trying to open - " + pageURL);
+        extentTest.log(LogStatus.INFO, "Trying to open - <a>" + pageURL + "</a>");
         try {
             start = System.currentTimeMillis(); // Start timer.
             browser.get(pageURL);
