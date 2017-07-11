@@ -70,7 +70,7 @@ public class ConfList_test extends Settings {
 
     @Test
     public void a_NewsList_load_test() throws Exception {
-        LoadPageAndVerify(AuthorsListURL);
+        LoadPageAndVerify(ConfListURL);
     }
 
 
