@@ -56,7 +56,7 @@ import static Helpers.PageElement.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ArticleList_test extends Settings {
 
-    @BeforeTest
+    @BeforeClass
     public static void setUp() throws Exception {
         System.setProperty("galen.config", "C:\\tests\\a42gazeta\\galen.config");
         GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
@@ -68,7 +68,7 @@ public class ArticleList_test extends Settings {
 
     @Test
     public void a_NewsList_load_test() throws Exception {
-        LoadPageAndVerify(NewsListURL);
+        LoadPageAndVerify(ArticleListURL);
     }
 
 
