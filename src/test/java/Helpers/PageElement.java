@@ -1,7 +1,6 @@
 package Helpers;
 
 import com.galenframework.api.Galen;
-import com.galenframework.config.GalenConfig;
 import com.galenframework.reports.GalenTestInfo;
 import com.galenframework.reports.HtmlReportBuilder;
 import com.galenframework.reports.model.LayoutReport;
@@ -17,21 +16,14 @@ import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.logging.Logs;
-import org.testng.collections.Objects;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import static Helpers.Locators.extentReportFile;
-import static Helpers.Locators.replacement;
 import static Helpers.Locators.title_x_margin_from_top;
 import static Helpers.Settings.browser;
 

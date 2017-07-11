@@ -1,7 +1,5 @@
 package Helpers;
 
-import com.relevantcodes.extentreports.ExtentReports;
-
 import java.util.*;
 
 public class Locators extends Settings {
