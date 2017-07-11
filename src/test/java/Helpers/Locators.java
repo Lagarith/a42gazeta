@@ -22,6 +22,11 @@ public class Locators extends Settings {
     public static final String LoginPage = "http://test-case.vats.atwinta.ru/login/";
     public static final String NewsListURL = "http://gazeta.a42.ru/lenta/news";
     public static final String PhotoListURL = "http://gazeta.a42.ru/lenta/photos";
+    public static final String ArticleListURL = "http://gazeta.a42.ru/lenta/articles";
+    public static final String ProjectListURL = "http://gazeta.a42.ru/lenta/projects";
+    public static final String AuthorsListURL = "http://gazeta.a42.ru/lenta/authors";
+    public static final String ConfListURL = "http://gazeta.a42.ru/lenta/conf";
+    public static final String CompanyListURL = "http://gazeta.a42.ru/lenta/companies";
 
 
 
