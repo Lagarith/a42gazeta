@@ -40,5 +40,3 @@ public class ConfList_test extends Settings {
         browser.quit();
     }
 }
-
-
