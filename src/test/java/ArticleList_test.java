@@ -54,7 +54,7 @@ import static Helpers.PageElement.*;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ArticlesList extends Settings {
+public class ArticleList_test extends Settings {
 
     @BeforeTest
     public static void setUp() throws Exception {
