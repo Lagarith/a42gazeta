@@ -16,7 +16,7 @@ import static Helpers.PageElement.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class NewsPage_test extends Settings{
 
-    private static String[][] data = new String[31][2];
+    private static String[][] data = new String[30][2];
 
     private static String[][] getLinks() throws Exception {
         browser.get(NewsListURL);
@@ -24,12 +24,9 @@ public class NewsPage_test extends Settings{
         Click(NewsList_ShowMore_btn);
         Click(NewsList_ShowMore_btn);
 
-        for (int i = 1; i < 31; i++) {
-            String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
-            String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
-
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a")).getAttribute("href");
+        for (int i = 0; i < 30; i++) {
+            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
+            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
         }
 
         return data;

@@ -17,20 +17,19 @@ import static Helpers.PageElement.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AuthorsPage_test extends Settings{
 
-    private static String[][] data = new String[23][2];
+    private static String[][] data = new String[22][2];
 
     private static String[][] getLinks() throws Exception {
         browser.get(AuthorsListURL);
 
         Click(NewsList_ShowMore_btn);
 
-        for (int i = 1; i < 23; i++) {
+        for (int i = 0; i < 22; i++) {
             String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
             String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
 
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a")).getAttribute("href");
-                                                       //*[@id="paginate-block"]/div/div[22]/p/a
+            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
+            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
         }
 
         return data;

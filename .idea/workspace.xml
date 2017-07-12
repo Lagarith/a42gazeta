@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,13 +101,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsPage_test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewsPage_test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="28" column="100" lean-forward="false" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
               <folding>
-                <element signature="method#getLinks#0;class#NewsPage_test#0" expanded="false" />
                 <element signature="method#setUp#0;class#NewsPage_test#0" expanded="false" />
               </folding>
             </state>
@@ -131,10 +130,9 @@
       <file leaf-file-name="ArticlePage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
               <folding>
-                <element signature="method#getLinks#0;class#ArticlePage_test#0" expanded="false" />
                 <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
                 <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
               </folding>
@@ -142,11 +140,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorsPage_test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthorsPage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="288">
+              <caret line="31" column="137" lean-forward="false" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
               <folding>
                 <element signature="method#a_Open_Authors_Page_test#0;class#AuthorsPage_test#0" expanded="false" />
               </folding>
@@ -179,7 +177,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/main.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestSuite.java" />
@@ -191,9 +188,10 @@
         <option value="$PROJECT_DIR$/src/test/java/CompanyList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/ConfList_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
       </list>
     </option>
   </component>
@@ -828,7 +826,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -840,7 +838,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1297,25 +1295,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ConfList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="3672">
+          <caret line="243" column="13" lean-forward="false" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsPage_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" column="137" lean-forward="false" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
           <folding>
-            <element signature="method#setUp#0;class#ConfList_test#0" expanded="false" />
-            <element signature="method#a_NewsList_load_test#0;class#ConfList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#ConfList_test#0" expanded="false" />
+            <element signature="method#a_Open_Authors_Page_test#0;class#AuthorsPage_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
           <folding>
-            <element signature="method#getLinks#0;class#NewsPage_test#0" expanded="false" />
-            <element signature="method#setUp#0;class#NewsPage_test#0" expanded="false" />
+            <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
+            <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1329,14 +1333,6 @@
             <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
             <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3672">
-          <caret line="243" column="13" lean-forward="false" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1354,24 +1350,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ConfList_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding>
-            <element signature="method#getLinks#0;class#ArticlePage_test#0" expanded="false" />
-            <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
-            <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
+            <element signature="method#setUp#0;class#ConfList_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#ConfList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#ConfList_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsPage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="28" column="100" lean-forward="false" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
           <folding>
-            <element signature="method#a_Open_Authors_Page_test#0;class#AuthorsPage_test#0" expanded="false" />
+            <element signature="method#setUp#0;class#NewsPage_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
