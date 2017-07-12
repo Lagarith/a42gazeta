@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/CompanyPage_test.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ArticlePage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/ArticlePage_test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/AuthorsPage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/AuthorsPage_test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
     </list>
