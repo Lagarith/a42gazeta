@@ -1,6 +1,7 @@
 package gazeta.tests;
 
 import Helpers.Settings;
+import gazeta.components.PageElement;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -8,6 +9,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.*;
 
+import static Helpers.Locators.*;
 import static gazeta.components.PageElement.*;
 
 import gazeta.pages.ArticlePage_page;
@@ -23,7 +25,7 @@ public class ArticlePage_test extends Settings{
     public static void setUp() throws Exception {
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
-        data = ArticlePage_page.getLinks();
+        data = PageElement.getLinks(NewsListURL,30);
     }
 
 

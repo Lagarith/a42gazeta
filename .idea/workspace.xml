@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/pages/ArticleList_page.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/pages/ArticleList_page.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/pages/ArticlePage_page.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/pages/ArticlePage_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticleList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticleList_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsList_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyList_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/ConfList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ConfList_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/NewsPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportList_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gazeta/tests/ProjectsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ProjectsList_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,26 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="430" column="27" lean-forward="false" selection-start-line="430" selection-start-column="27" selection-end-line="430" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticlePage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java">
+      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
-                <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,10 +49,20 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/pages/ArticlePage_page.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticlePage_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,7 +93,6 @@
         <option value="$PROJECT_DIR$/src/test/java/main.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticlesList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
@@ -128,8 +122,9 @@
         <option value="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticleList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/gazeta/pages/ArticleList_page.java" />
         <option value="$PROJECT_DIR$/src/test/java/gazeta/pages/ArticlePage_page.java" />
-        <option value="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
       </list>
     </option>
   </component>
@@ -1123,14 +1118,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArticlesList.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1363,32 +1350,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
-            <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="441">
+          <caret line="430" column="27" lean-forward="false" selection-start-line="430" selection-start-column="27" selection-end-line="430" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/pages/ArticlePage_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/components/PageElement.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>

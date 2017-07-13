@@ -24,8 +24,8 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import static Helpers.Locators.extentReportFile;
-import static Helpers.Locators.title_x_margin_from_top;
+import static Helpers.Locators.*;
+import static Helpers.Locators.NewsList_ShowMore_btn;
 import static Helpers.Settings.browser;
 
 public class PageElement extends Settings {
@@ -421,6 +421,24 @@ public class PageElement extends Settings {
 
     public void ReadFile(String filePath) {
 
+    }
+
+
+
+    public static String[][] getLinks(String pageURL ,int arraySize) throws Exception {
+        String[][] data = new String[arraySize][2];
+
+        browser.get(pageURL);
+
+        Click(NewsList_ShowMore_btn);
+        Click(NewsList_ShowMore_btn);
+
+        for (int i = 0; i < arraySize; i++) {
+            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
+            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
+        }
+
+        return data;
     }
 
 

@@ -11,11 +11,6 @@ public class Locators extends Settings {
 
 
 
-    //COLLECTIONS
-
-
-
-
     //LINKS
     public static final String LoginPage = "http://test-case.vats.atwinta.ru/login/";
     public static final String NewsListURL = "http://gazeta.a42.ru/lenta/news";
