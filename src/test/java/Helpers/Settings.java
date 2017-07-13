@@ -1,4 +1,6 @@
 package Helpers;
+import com.galenframework.config.GalenConfig;
+import com.galenframework.config.GalenProperty;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
@@ -146,6 +148,8 @@ public class Settings {
 
     @Before
     public void beforeTest() throws Exception {
+        System.setProperty("galen.config", "C:\\tests\\a42gazeta\\galen.config");
+        GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
     }
 
     @After

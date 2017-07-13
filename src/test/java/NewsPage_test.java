@@ -34,8 +34,6 @@ public class NewsPage_test extends Settings{
 
     @BeforeClass
     public static void setUp() throws Exception {
-        System.setProperty("galen.config", "C:\\tests\\a42gazeta\\galen.config");
-        GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
         data = getLinks();

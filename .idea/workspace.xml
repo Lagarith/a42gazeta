@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/CompanyPage_test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ArticlePage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/ArticlePage_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/AuthorsPage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/AuthorsPage_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" afterPath="$PROJECT_DIR$/target/test-classes/NewsPage_test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ArticleList_test.java" afterPath="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CompanyList_test.java" afterPath="$PROJECT_DIR$/src/test/java/CompanyList_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ConfList_test.java" afterPath="$PROJECT_DIR$/src/test/java/ConfList_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,92 +36,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PageElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3672">
-              <caret line="243" column="13" lean-forward="false" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ArticleList_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-              <folding>
-                <element signature="method#setUp#0;class#ArticleList_test#0" expanded="false" />
-                <element signature="method#a_NewsList_load_test#0;class#ArticleList_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#ArticleList_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ConfList_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-              <folding>
-                <element signature="method#setUp#0;class#ConfList_test#0" expanded="false" />
-                <element signature="method#a_NewsList_load_test#0;class#ConfList_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#ConfList_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhotoReportList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportList_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-              <folding>
-                <element signature="method#setUp#0;class#PhotoReportList_test#0" expanded="false" />
-                <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
-                <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
-                <marker date="1499765094676" expanded="false" signature="1171:2571" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="method#getLinks#0;class#NewsPage_test#0" expanded="false" />
-                <element signature="method#setUp#0;class#NewsPage_test#0" expanded="false" />
-                <element signature="method#a_Open_Article_Page_test#0;class#NewsPage_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#NewsPage_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyList_test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CompanyList_test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CompanyList_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
-                <element signature="method#setUp#0;class#CompanyList_test#0" expanded="false" />
                 <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
                 <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
               </folding>
@@ -121,41 +49,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticlePage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
-              <folding>
-                <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
-                <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorsPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsPage_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <element signature="method#getLinks#0;class#AuthorsPage_test#0" expanded="false" />
-                <element signature="method#setUp#0;class#AuthorsPage_test#0" expanded="false" />
-                <element signature="method#a_Open_Authors_Page_test#0;class#AuthorsPage_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyPage_test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompanyPage_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CompanyPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="221">
+              <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
               <folding>
-                <element signature="method#setUp#0;class#CompanyPage_test#0" expanded="false" />
+                <element signature="method#getLinks#0;class#CompanyPage_test#0" expanded="false" />
                 <element signature="method#a_Open_Authors_Page_test#0;class#CompanyPage_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#CompanyPage_test#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -184,24 +86,24 @@
         <option value="$PROJECT_DIR$/testing.xml" />
         <option value="$PROJECT_DIR$/src/test/java/HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/main.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticlesList.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CompanyList_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ConfList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CompanyList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ConfList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" />
       </list>
     </option>
   </component>
@@ -256,7 +158,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,8 +210,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a42gazeta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a42gazeta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -803,9 +731,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArticleList_test_a_NewsList_load_test - 2017.07.11 at 16h 00m 20s.xml">
-      <configuration name="ArticleList_test.a_NewsList_load_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ArticlePage_test_a_Open_Article_Page_test - 2017.07.11 at 16h 44m 35s.xml">
       <configuration name="ArticlePage_test.a_Open_Article_Page_test" configurationId="JUnit" />
     </history-entry>
@@ -827,6 +752,9 @@
     <history-entry file="CompanyPage_test - 2017.07.12 at 17h 13m 37s.xml">
       <configuration name="CompanyPage_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CompanyPage_test - 2017.07.12 at 17h 37m 58s.xml">
+      <configuration name="CompanyPage_test" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="PhotoReportPage_test - 2017.07.11 at 14h 55m 38s.xml">
       <configuration name="PhotoReportPage_test" configurationId="JUnit" />
     </history-entry>
@@ -836,19 +764,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -866,6 +793,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -875,7 +803,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -902,6 +830,7 @@
         <state relative-caret-position="0">
           <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
           <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -954,6 +883,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1006,6 +936,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1058,6 +989,7 @@
         <state relative-caret-position="0">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1110,6 +1042,7 @@
         <state relative-caret-position="0">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
             <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
             <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
             <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
@@ -1197,20 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="149" column="47" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
-          <folding>
-            <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
-            <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
-            <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
-            <element signature="method#sendmail#0;class#Settings#0" expanded="false" />
-            <element signature="method#getSomehing#0;class#Settings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1564">
@@ -1229,58 +1148,127 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArticlesList.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="243" column="13" lean-forward="false" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
           <folding>
-            <element signature="method#setUp#0;class#AuthorsList_test#0" expanded="false" />
-            <element signature="method#a_NewsList_load_test#0;class#AuthorsList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#AuthorsList_test#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4522#4523#0" expanded="false" />
+            <element signature="e#4571#4572#0" expanded="false" />
+            <element signature="e#8386#8387#0" expanded="false" />
+            <element signature="e#8433#8434#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ProjectsList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#setUp#0;class#ProjectsList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#ProjectsList_test#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArticleList_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="method#setUp#0;class#ArticleList_test#0" expanded="false" />
             <element signature="method#a_NewsList_load_test#0;class#ArticleList_test#0" expanded="false" />
             <element signature="method#setDown#0;class#ArticleList_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="150" column="81" lean-forward="true" selection-start-line="150" selection-start-column="81" selection-end-line="150" selection-end-column="81" />
+          <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
+            <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
+            <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
+            <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
+            <element signature="method#sendmail#0;class#Settings#0" expanded="false" />
+            <element signature="method#getSomehing#0;class#Settings#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding>
+            <element signature="method#getLinks#0;class#ArticlePage_test#0" expanded="false" />
+            <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CompanyPage_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+          <folding>
+            <element signature="method#getLinks#0;class#CompanyPage_test#0" expanded="false" />
+            <element signature="method#a_Open_Authors_Page_test#0;class#CompanyPage_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#CompanyPage_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ConfList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="method#a_NewsList_load_test#0;class#ConfList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#ConfList_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
+            <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
+            <marker date="1499930394643" expanded="false" signature="1001:2401" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="39" column="49" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
           <folding>
-            <element signature="method#setUp#0;class#PhotoReportPage_test#0" expanded="false" />
+            <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
             <element signature="method#setDown#0;class#PhotoReportPage_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ProjectsList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="method#setDown#0;class#ProjectsList_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
-            <element signature="method#setUp#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#b_NewsList_HtmlCheck_test#0;class#HomePage_test#0" expanded="false" />
             <element signature="method#c_testImageDisplayed_test#0;class#HomePage_test#0" expanded="false" />
@@ -1289,103 +1277,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/PageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3672">
-          <caret line="243" column="13" lean-forward="false" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CompanyList_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="method#setUp#0;class#CompanyList_test#0" expanded="false" />
-            <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PhotoReportList_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding>
-            <element signature="method#setUp#0;class#PhotoReportList_test#0" expanded="false" />
-            <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
-            <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
-            <marker date="1499765094676" expanded="false" signature="1171:2571" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ConfList_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding>
-            <element signature="method#setUp#0;class#ConfList_test#0" expanded="false" />
-            <element signature="method#a_NewsList_load_test#0;class#ConfList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#ConfList_test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/NewsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding>
             <element signature="method#getLinks#0;class#NewsPage_test#0" expanded="false" />
-            <element signature="method#setUp#0;class#NewsPage_test#0" expanded="false" />
             <element signature="method#a_Open_Article_Page_test#0;class#NewsPage_test#0" expanded="false" />
             <element signature="method#setDown#0;class#NewsPage_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="method#a_NewsList_load_test#0;class#AuthorsList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#AuthorsList_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AuthorsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
           <folding>
             <element signature="method#getLinks#0;class#AuthorsPage_test#0" expanded="false" />
-            <element signature="method#setUp#0;class#AuthorsPage_test#0" expanded="false" />
             <element signature="method#a_Open_Authors_Page_test#0;class#AuthorsPage_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CompanyList_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
+        <state relative-caret-position="170">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding>
-            <element signature="method#setUp#0;class#ArticlePage_test#0" expanded="false" />
-            <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CompanyPage_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="method#setUp#0;class#CompanyPage_test#0" expanded="false" />
-            <element signature="method#a_Open_Authors_Page_test#0;class#CompanyPage_test#0" expanded="false" />
+            <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
