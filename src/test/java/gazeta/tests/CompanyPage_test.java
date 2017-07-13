@@ -1,5 +1,4 @@
-package PageObjects.Articles;
-
+package gazeta.tests; /** gazeta.tests.CompanyPage_test */
 import Helpers.Settings;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -14,20 +13,17 @@ import static Helpers.PageElement.*;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ArticlePage_test extends Settings{
+public class CompanyPage_test extends Settings{
 
     private static String[][] data = new String[30][2];
 
     private static String[][] getLinks() throws Exception {
-        browser.get(NewsListURL);
+        browser.get(CompanyListURL);
 
         Click(NewsList_ShowMore_btn);
         Click(NewsList_ShowMore_btn);
 
         for (int i = 0; i < 30; i++) {
-            String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
-            String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
-
             data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
             data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
         }
@@ -45,7 +41,7 @@ public class ArticlePage_test extends Settings{
 
 
     @Test
-    public void a_Open_Article_Page_test() throws Exception {
+    public void a_Open_Authors_Page_test() throws Exception {
         for (String[] item:data) {
             LoadPageAndVerify(item[1]);
         }
@@ -57,3 +53,5 @@ public class ArticlePage_test extends Settings{
         browser.quit();
     }
 }
+
+

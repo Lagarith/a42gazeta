@@ -1,4 +1,4 @@
-package PageObjects.PhotoReport;
+package gazeta.tests;
 
 import Helpers.Settings;
 import org.junit.AfterClass;

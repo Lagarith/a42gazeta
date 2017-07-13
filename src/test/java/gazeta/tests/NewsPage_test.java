@@ -1,4 +1,5 @@
-package PageObjects.Company; /** PageObjects.Company.CompanyPage_test */
+package gazeta.tests;
+
 import Helpers.Settings;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -13,12 +14,12 @@ import static Helpers.PageElement.*;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class CompanyPage_test extends Settings{
+public class NewsPage_test extends Settings{
 
     private static String[][] data = new String[30][2];
 
     private static String[][] getLinks() throws Exception {
-        browser.get(CompanyListURL);
+        browser.get(NewsListURL);
 
         Click(NewsList_ShowMore_btn);
         Click(NewsList_ShowMore_btn);
@@ -41,11 +42,12 @@ public class CompanyPage_test extends Settings{
 
 
     @Test
-    public void a_Open_Authors_Page_test() throws Exception {
+    public void a_Open_Article_Page_test() throws Exception {
         for (String[] item:data) {
             LoadPageAndVerify(item[1]);
         }
     }
+
 
 
     @AfterClass
@@ -53,5 +55,3 @@ public class CompanyPage_test extends Settings{
         browser.quit();
     }
 }
-
-

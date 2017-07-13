@@ -1,4 +1,4 @@
-package PageObjects.Authors; /** PageObjects.Authors.AuthorsPage_test */
+package gazeta.tests; /** gazeta.tests.AuthorsPage_test */
 import Helpers.Settings;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

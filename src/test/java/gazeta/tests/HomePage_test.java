@@ -1,4 +1,4 @@
-package PageObjects.News;
+package gazeta.tests;
 
 import Helpers.Settings;
 import com.relevantcodes.extentreports.ExtentReports;

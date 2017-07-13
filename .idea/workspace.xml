@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ArticleList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Articles/ArticleList_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Articles/ArticlePage_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsList_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsPage_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/CompanyList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyList_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyPage_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ConfList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Conf/ConfList_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/News/NewsPage_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportList_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportPage_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/Projects/ProjectsList_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Articles/ArticleList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticleList_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Articles/ArticlePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsList_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsPage_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyList_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyPage_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Conf/ConfList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ConfList_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/News/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/NewsPage_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportList_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportPage_test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/PageObjects/Projects/ProjectsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/gazeta/tests/ProjectsList_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,21 +34,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompanyList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyList_test.java">
+      <file leaf-file-name="ArticleList_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticleList_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="272">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#ArticleList_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#ArticleList_test#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ConfList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Conf/ConfList_test.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ConfList_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -60,50 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoReportList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportList_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
-                <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
-                <marker date="1499930984377" expanded="false" signature="941:2341" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhotoReportPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportPage_test.java">
+      <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#PhotoReportPage_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectsList_test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Projects/ProjectsList_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="method#setDown#0;class#ProjectsList_test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
               <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
@@ -115,8 +76,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PhotoReportList_test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportList_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
+                <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
+                <marker date="1499932471524" expanded="false" signature="930:2330" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="NewsPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/NewsPage_test.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/NewsPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -129,21 +105,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorsList_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsList_test.java">
+      <file leaf-file-name="CompanyList_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyList_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="method#a_NewsList_load_test#0;class#AuthorsList_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#AuthorsList_test#0" expanded="false" />
+                <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticlePage_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="method#getLinks#0;class#ArticlePage_test#0" expanded="false" />
+                <element signature="method#a_Open_Article_Page_test#0;class#ArticlePage_test#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AuthorsPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsPage_test.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -156,7 +145,7 @@
         </entry>
       </file>
       <file leaf-file-name="CompanyPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyPage_test.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyPage_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -164,6 +153,19 @@
                 <element signature="method#getLinks#0;class#CompanyPage_test#0" expanded="false" />
                 <element signature="method#a_Open_Authors_Page_test#0;class#CompanyPage_test#0" expanded="false" />
                 <element signature="method#setDown#0;class#CompanyPage_test#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthorsList_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsList_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="method#a_NewsList_load_test#0;class#AuthorsList_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#AuthorsList_test#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -199,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthorsPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/CompanyList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" />
@@ -208,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticleList/ArticleList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Articles/ArticlePage_test.java" />
@@ -218,8 +218,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Conf/ConfList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/News/NewsPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/PhotoReport/PhotoReportPage_test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Projects/ProjectsList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/Projects/ProjectsList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Projects/ProjectsList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gazeta/PhotoReportList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportList_test.java" />
       </list>
     </option>
   </component>
@@ -325,8 +329,34 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PageObjects" />
+              <option name="myItemId" value="a42gazeta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a42gazeta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gazeta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,6 +381,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gazeta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -364,6 +398,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../HomePage" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/.idea/libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.CompanyPage_test">
     <configuration default="false" name="ArticleList_test.a_NewsList_load_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -956,7 +995,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1009,7 +1048,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
@@ -1062,7 +1101,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
@@ -1115,7 +1154,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -1168,7 +1207,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -1182,7 +1221,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1301,9 +1340,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Articles/ArticleList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="51">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#PhotoReportPage_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ProjectsList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="method#setDown#0;class#ProjectsList_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticleList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1313,7 +1373,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Articles/ArticlePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ArticlePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -1324,7 +1384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsList_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -1335,7 +1395,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Authors/AuthorsPage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/AuthorsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -1346,7 +1406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyList_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -1357,7 +1417,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Company/CompanyPage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/CompanyPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -1369,7 +1429,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Conf/ConfList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/ConfList_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -1380,9 +1440,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/HomePage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/HomePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="85">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="method#a_NewsList_load_test#0;class#HomePage_test#0" expanded="false" />
@@ -1393,7 +1453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/News/NewsPage_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/NewsPage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -1405,36 +1465,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportList_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gazeta/tests/PhotoReportList_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="85">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
             <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
             <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
-            <marker date="1499930984377" expanded="false" signature="941:2341" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/PhotoReport/PhotoReportPage_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="method#getLinks#0;class#PhotoReportPage_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#PhotoReportPage_test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Projects/ProjectsList_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="method#setDown#0;class#ProjectsList_test#0" expanded="false" />
+            <marker date="1499932471524" expanded="false" signature="930:2330" ph="{...}" />
           </folding>
         </state>
       </provider>
