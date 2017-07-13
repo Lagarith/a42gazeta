@@ -6,10 +6,10 @@ import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
 
-import static Helpers.Locators.*;
-import static Helpers.PageElement.*;
+import static Helpers.Locators.ArticleListURL;
+import static Helpers.PageElement.LoadPageAndVerify;
 
 
 

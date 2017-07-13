@@ -11,6 +11,8 @@ import org.openqa.selenium.*;
 import static Helpers.Locators.*;
 import static Helpers.PageElement.*;
 
+import gazeta.pages.ArticlePage_page;
+
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -18,28 +20,11 @@ public class ArticlePage_test extends Settings{
 
     private static String[][] data = new String[30][2];
 
-    private static String[][] getLinks() throws Exception {
-        browser.get(NewsListURL);
-
-        Click(NewsList_ShowMore_btn);
-        Click(NewsList_ShowMore_btn);
-
-        for (int i = 0; i < 30; i++) {
-            String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
-            String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
-
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
-        }
-
-        return data;
-    }
-
     @BeforeClass
     public static void setUp() throws Exception {
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
-        data = getLinks();
+        data = ArticlePage_page.getLinks();
     }
 
 
