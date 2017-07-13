@@ -1,4 +1,4 @@
-/** ProjectsList_test */
+package PageObjects.Company; /** PageObjects.Company.CompanyList_test */
 
 import Helpers.Settings;
 import org.junit.AfterClass;
@@ -14,7 +14,7 @@ import static Helpers.PageElement.*;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ProjectsList_test extends Settings {
+public class CompanyList_test extends Settings {
 
     @BeforeClass
     public static void setUp() throws Exception {
@@ -26,7 +26,7 @@ public class ProjectsList_test extends Settings {
 
     @Test
     public void a_NewsList_load_test() throws Exception {
-        LoadPageAndVerify(ProjectListURL);
+        LoadPageAndVerify(CompanyListURL);
     }
 
 
@@ -36,3 +36,6 @@ public class ProjectsList_test extends Settings {
         browser.quit();
     }
 }
+
+
+

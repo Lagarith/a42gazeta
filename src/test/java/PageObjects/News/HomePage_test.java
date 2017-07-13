@@ -1,4 +1,9 @@
+package PageObjects.News;
+
 import Helpers.Settings;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -9,8 +14,8 @@ import org.openqa.selenium.*;
 import static Helpers.Locators.*;
 import static Helpers.PageElement.*;
 
-@FixMethodOrder (MethodSorters.NAME_ASCENDING)
-public class PhotoReportList_test extends Settings{
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class HomePage_test extends Settings {
 
 
 
@@ -23,28 +28,27 @@ public class PhotoReportList_test extends Settings{
 
 
     @Test
-    public void a_Open_Photo_Report_List_test() throws Exception {
-        LoadPageAndVerify(PhotoListURL);
+    public void a_NewsList_load_test() throws Exception {
+        LoadPageAndVerify(NewsListURL);
     }
 
 
 
     @Test
     public void b_NewsList_HtmlCheck_test() throws Exception {
-        LoadPage(PhotoListURL);
-//        Check(NewsList_gspec);
+        LoadPage(NewsListURL);
+        Check(NewsList_gspec);
     }
 
 
 
-/*
     @Test
     public void c_testImageDisplayed_test() throws Exception {
         boolean error_status = true;
         ExtentReports extent = NewReport();
         ExtentTest extentTest = extent.startTest("c_testImageDisplayed_test", "Test for all images is loaded");
 
-        LoadPage(PhotoListURL);
+        LoadPage(NewsListURL);
         if (browser.findElement(By.xpath(NewsList_main_news_Image)).isDisplayed()) {
             extentTest.log(LogStatus.INFO, "Image is load", "image xpath: " + NewsList_main_news_Image);
         } else {
@@ -62,12 +66,11 @@ public class PhotoReportList_test extends Settings{
         }
 
         if (error_status) extentTest.log(LogStatus.PASS, "All images will load, without errors");
-        else extentTest.log(LogStatus.FAIL, "<b>Some images is not load</b>");
+            else extentTest.log(LogStatus.FAIL, "<b>Some images is not load</b>");
 
         extent.endTest(extentTest);
         extent.flush();
     }
-*/
 
 
 
@@ -75,4 +78,5 @@ public class PhotoReportList_test extends Settings{
     public static void setDown() throws Exception {
         browser.quit();
     }
+
 }

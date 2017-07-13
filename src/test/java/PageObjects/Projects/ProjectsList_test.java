@@ -1,4 +1,4 @@
-/** ConfList_test */
+package PageObjects.Projects; /** PageObjects.Projects.ProjectsList_test */
 
 import Helpers.Settings;
 import org.junit.AfterClass;
@@ -14,7 +14,7 @@ import static Helpers.PageElement.*;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ConfList_test extends Settings {
+public class ProjectsList_test extends Settings {
 
     @BeforeClass
     public static void setUp() throws Exception {
@@ -26,7 +26,7 @@ public class ConfList_test extends Settings {
 
     @Test
     public void a_NewsList_load_test() throws Exception {
-        LoadPageAndVerify(ConfListURL);
+        LoadPageAndVerify(ProjectListURL);
     }
 
 

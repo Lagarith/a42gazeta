@@ -1,4 +1,4 @@
-/** CompanyPage_test */
+package PageObjects.Company; /** PageObjects.Company.CompanyPage_test */
 import Helpers.Settings;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

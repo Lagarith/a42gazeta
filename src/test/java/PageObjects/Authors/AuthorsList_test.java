@@ -1,4 +1,4 @@
-/** AuthorsList_test */
+package PageObjects.Authors; /** PageObjects.Authors.AuthorsList_test */
 
 import Helpers.Settings;
 import org.junit.AfterClass;

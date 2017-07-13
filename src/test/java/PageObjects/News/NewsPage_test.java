@@ -1,3 +1,5 @@
+package PageObjects.News;
+
 import Helpers.Settings;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
