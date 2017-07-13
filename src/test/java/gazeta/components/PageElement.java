@@ -1,5 +1,6 @@
-package Helpers;
+package gazeta.components;
 
+import Helpers.Settings;
 import com.galenframework.api.Galen;
 import com.galenframework.reports.GalenTestInfo;
 import com.galenframework.reports.HtmlReportBuilder;
@@ -27,7 +28,7 @@ import static Helpers.Locators.extentReportFile;
 import static Helpers.Locators.title_x_margin_from_top;
 import static Helpers.Settings.browser;
 
-public class PageElement {
+public class PageElement extends Settings {
 
     public static boolean ContentText(String element_xpath) {
         boolean error_status = false;

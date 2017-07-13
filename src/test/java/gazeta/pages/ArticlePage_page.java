@@ -1,13 +1,11 @@
 package gazeta.pages;
 
 import Helpers.Settings;
-import org.junit.BeforeClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 
 import static Helpers.Locators.NewsListURL;
 import static Helpers.Locators.NewsList_ShowMore_btn;
-import static Helpers.PageElement.Click;
+import static gazeta.components.PageElement.Click;
 
 public class ArticlePage_page extends Settings {
 

@@ -8,8 +8,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.*;
 
-import static Helpers.Locators.*;
-import static Helpers.PageElement.*;
+import static gazeta.components.PageElement.*;
 
 import gazeta.pages.ArticlePage_page;
 

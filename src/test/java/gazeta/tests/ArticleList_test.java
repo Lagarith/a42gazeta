@@ -9,7 +9,7 @@ import org.junit.runners.MethodSorters;
 import org.openqa.selenium.Dimension;
 
 import static Helpers.Locators.ArticleListURL;
-import static Helpers.PageElement.LoadPageAndVerify;
+import static gazeta.components.PageElement.LoadPageAndVerify;
 
 
 
