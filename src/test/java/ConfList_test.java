@@ -1,8 +1,6 @@
 /** ConfList_test */
 
 import Helpers.Settings;
-import com.galenframework.config.GalenConfig;
-import com.galenframework.config.GalenProperty;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;

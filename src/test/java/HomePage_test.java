@@ -1,6 +1,4 @@
 import Helpers.Settings;
-import com.galenframework.config.GalenConfig;
-import com.galenframework.config.GalenProperty;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;

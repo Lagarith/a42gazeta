@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afb2feb-887e-4ff7-bebb-e44f70c6f84d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extentReportFile.html" afterPath="$PROJECT_DIR$/extentReportFile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ArticleList_test.java" afterPath="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" afterPath="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
@@ -11,7 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CompanyList_test.java" afterPath="$PROJECT_DIR$/src/test/java/CompanyList_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/CompanyPage_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ConfList_test.java" afterPath="$PROJECT_DIR$/src/test/java/ConfList_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HomePage_test.java" afterPath="$PROJECT_DIR$/src/test/java/HomePage_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" afterPath="$PROJECT_DIR$/src/test/java/NewsPage_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" afterPath="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
@@ -36,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompanyList_test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompanyList_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CompanyList_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
                 <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
@@ -49,15 +46,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompanyPage_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CompanyPage_test.java">
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+            <state relative-caret-position="459">
+              <caret line="150" column="81" lean-forward="true" selection-start-line="150" selection-start-column="81" selection-end-line="150" selection-end-column="81" />
               <folding>
-                <element signature="method#getLinks#0;class#CompanyPage_test#0" expanded="false" />
-                <element signature="method#a_Open_Authors_Page_test#0;class#CompanyPage_test#0" expanded="false" />
-                <element signature="method#setDown#0;class#CompanyPage_test#0" expanded="false" />
+                <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
+                <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
+                <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
+                <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
+                <element signature="method#sendmail#0;class#Settings#0" expanded="false" />
+                <element signature="method#getSomehing#0;class#Settings#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleList_test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ArticleList_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="method#a_NewsList_load_test#0;class#ArticleList_test#0" expanded="false" />
+                <element signature="method#setDown#0;class#ArticleList_test#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ArticlesList.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/PageElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/Settings.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArticlePage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthorsList_test.java" />
@@ -104,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/test/java/PhotoReportList_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/PhotoReportPage_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/ProjectsList_test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ArticleList_test.java" />
       </list>
     </option>
   </component>
@@ -764,7 +777,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,8 +793,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -792,10 +807,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1170,32 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ArticleList_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="method#a_NewsList_load_test#0;class#ArticleList_test#0" expanded="false" />
-            <element signature="method#setDown#0;class#ArticleList_test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="150" column="81" lean-forward="true" selection-start-line="150" selection-start-column="81" selection-end-line="150" selection-end-column="81" />
-          <folding>
-            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
-            <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
-            <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
-            <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
-            <element signature="method#sendmail#0;class#Settings#0" expanded="false" />
-            <element signature="method#getSomehing#0;class#Settings#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArticlePage_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1238,7 +1225,7 @@
             <element signature="method#a_Open_Photo_Report_List_test#0;class#PhotoReportList_test#0" expanded="false" />
             <element signature="method#b_NewsList_HtmlCheck_test#0;class#PhotoReportList_test#0" expanded="false" />
             <element signature="method#setDown#0;class#PhotoReportList_test#0" expanded="false" />
-            <marker date="1499930394643" expanded="false" signature="1001:2401" ph="{...}" />
+            <marker date="1499930543424" expanded="false" signature="907:2307" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1314,10 +1301,36 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/CompanyList_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
             <element signature="method#a_NewsList_load_test#0;class#CompanyList_test#0" expanded="false" />
             <element signature="method#setDown#0;class#CompanyList_test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="150" column="81" lean-forward="true" selection-start-line="150" selection-start-column="81" selection-end-line="150" selection-end-column="81" />
+          <folding>
+            <element signature="method#SetBrowserFirefox#0;class#Settings#0" expanded="false" />
+            <element signature="method#SetBrowserChrome#0;class#Settings#0" expanded="false" />
+            <element signature="method#Take_screenshot#0;class#Settings#0" expanded="false" />
+            <element signature="method#delete_screenshot#0;class#Settings#0" expanded="false" />
+            <element signature="method#sendmail#0;class#Settings#0" expanded="false" />
+            <element signature="method#getSomehing#0;class#Settings#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ArticleList_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="method#a_NewsList_load_test#0;class#ArticleList_test#0" expanded="false" />
+            <element signature="method#setDown#0;class#ArticleList_test#0" expanded="false" />
           </folding>
         </state>
       </provider>
