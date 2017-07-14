@@ -1,5 +1,6 @@
 package gazeta.tests; /** gazeta.tests.CompanyPage_test */
 import Helpers.Settings;
+import gazeta.pages.CompanyPage_page;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -17,25 +18,11 @@ public class CompanyPage_test extends Settings{
 
     private static String[][] data = new String[30][2];
 
-    private static String[][] getLinks() throws Exception {
-        browser.get(CompanyListURL);
-
-        Click(NewsList_ShowMore_btn);
-        Click(NewsList_ShowMore_btn);
-
-        for (int i = 0; i < 30; i++) {
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
-        }
-
-        return data;
-    }
-
     @BeforeClass
     public static void setUp() throws Exception {
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
-        data = getLinks();
+        data = CompanyPage_page.getLinks();
     }
 
 
@@ -46,6 +33,7 @@ public class CompanyPage_test extends Settings{
             LoadPageAndVerify(item[1]);
         }
     }
+
 
 
     @AfterClass

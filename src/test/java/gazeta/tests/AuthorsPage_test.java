@@ -1,5 +1,8 @@
 package gazeta.tests; /** gazeta.tests.AuthorsPage_test */
 import Helpers.Settings;
+import gazeta.components.PageElement;
+import gazeta.pages.ArticleList_page;
+import gazeta.pages.AuthorsPage_page;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -17,27 +20,12 @@ public class AuthorsPage_test extends Settings{
 
     private static String[][] data = new String[22][2];
 
-    private static String[][] getLinks() throws Exception {
-        browser.get(AuthorsListURL);
-
-        Click(NewsList_ShowMore_btn);
-
-        for (int i = 0; i < 22; i++) {
-            String xPath = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a/strong";
-            String xPath2 = "//*[@id=\"paginate-block\"]/div/div[" + i + "]/p[1]/a";
-
-            data[i][0] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a/strong")).getText();
-            data[i][1] = browser.findElement(By.xpath("//*[@id=\"paginate-block\"]/div/div[" + (i+1) + "]/p[1]/a")).getAttribute("href");
-        }
-
-        return data;
-    }
 
     @BeforeClass
     public static void setUp() throws Exception {
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
-        data = getLinks();
+        data = AuthorsPage_page.getLinks();
     }
 
 

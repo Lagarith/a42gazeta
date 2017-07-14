@@ -1,7 +1,11 @@
 package gazeta.pages;
 
-/**
- * Created by User on 13.07.2017.
- */
-public class AuthorsList_page {
+import Helpers.Settings;
+import org.openqa.selenium.By;
+
+import static Helpers.Locators.CompanyListURL;
+import static Helpers.Locators.NewsList_ShowMore_btn;
+import static gazeta.components.PageElement.Click;
+
+public class AuthorsList_page extends Settings{
 }
