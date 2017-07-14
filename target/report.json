@@ -1,8 +1,8 @@
 {
   "tests" : [ {
     "name" : "Все главные новости дня – Газета Кемерова layout",
-    "startedAt" : 1499682316257,
-    "endedAt" : 1499682316257,
+    "startedAt" : 1500012717391,
+    "endedAt" : 1500012717391,
     "failed" : true,
     "statistic" : {
       "passed" : 39,
@@ -11,7 +11,7 @@
       "total" : 40
     },
     "testId" : "1--layout",
-    "duration" : 0,
-    "failed" : true
+    "failed" : true,
+    "duration" : 0
   } ]
 }

@@ -50,6 +50,7 @@ public class PageElement extends Settings {
     }
 
 
+
     public static boolean MaterialDateAdd(String element_) {
         boolean error_status = false;
         return error_status;
@@ -234,7 +235,7 @@ public class PageElement extends Settings {
 
         System.out.println(testSuiteName + ". ");
         ExtentReports extent = NewReport();
-        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - <a>" + pageURL + "</a>");
+        ExtentTest extentTest = extent.startTest(testSuiteName + " - Open: " + pageURL, "Trying to open page, by url - <a href = \"" + pageURL + "\">" + pageURL + "</a>");
 
         boolean error_status = true;
         long start = 0;
@@ -421,13 +422,4 @@ public class PageElement extends Settings {
     public void ReadFile(String filePath) {
 
     }
-
-
-
-    /*public void save(String fileName) throws FileNotFoundException {
-    String tmp = clubs.toString();
-    PrintWriter pw = new PrintWriter(new FileOutputStream(fileName));
-    pw.write(tmp);
-    pw.close();
-}*/
 }
