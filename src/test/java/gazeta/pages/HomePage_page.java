@@ -1,7 +1,6 @@
 package gazeta.pages;
 
-/**
- * Created by User on 13.07.2017.
- */
-public class HomePage_page {
+import Helpers.Settings;
+
+public class HomePage_page extends Settings{
 }
