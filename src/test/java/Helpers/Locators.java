@@ -24,7 +24,8 @@ public class Locators extends Settings {
 
 
     //SPEC FILES
-    public static final String NewsList_gspec = "news_List";
+    public static final String NewsList_spec = "news_List";
+    public static final String NewsPage_spec = "news_Page";
 
 
 

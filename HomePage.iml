@@ -115,5 +115,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.powermock:powermock-reflect:1.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.kreyssel.selenium2.visualdiff:visualdiff-core:1.0.0-SNAPSHOT" level="project" />
   </component>
 </module>

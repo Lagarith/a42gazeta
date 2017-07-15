@@ -37,7 +37,7 @@ public class HomePage_test extends Settings {
     @Test
     public void b_NewsList_HtmlCheck_test() throws Exception {
         LoadPage(NewsListURL);
-        Check(NewsList_gspec);
+        Check(NewsList_spec);
     }
 
 

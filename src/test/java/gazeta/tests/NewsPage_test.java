@@ -23,7 +23,7 @@ public class NewsPage_test extends Settings{
     public static void setUp() throws Exception {
         SetBrowserFirefox();
         browser.manage().window().setSize(new Dimension(1366, 768));
-        data = NewsPage_page.getLinks();
+//        data = NewsPage_page.getLinks();
     }
 
 
@@ -33,6 +33,14 @@ public class NewsPage_test extends Settings{
         for (String[] item:data) {
             LoadPageAndVerify(item[1]);
         }
+    }
+
+
+
+    @Test
+    public void b_asd_test() throws Exception {
+        LoadPage("http://gazeta.a42.ru/lenta/news/kuzbasskij-most-v-kemerove-vstal-v-probke-iz-za-remonta-i-dt");
+        Check(NewsPage_spec);
     }
 
 

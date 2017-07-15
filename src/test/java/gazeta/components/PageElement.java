@@ -309,7 +309,7 @@ public class PageElement extends Settings {
 
         LayoutReport layoutReport = null;
         try {
-            layoutReport = Galen.checkLayout(browser, "specs/" + fileName + ".spec", Arrays.asList("desktop"));
+            layoutReport = Galen.checkLayout(browser, "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\" + fileName + ".spec", Arrays.asList("desktop"));
         } catch (IOException e) {
             e.printStackTrace();
         }
