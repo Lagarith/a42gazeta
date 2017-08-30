@@ -3,14 +3,16 @@ package gazeta.tests;
 import Helpers.Settings;
 import gazeta.pages.PhotoReportPage_page;
 import gazeta.pages.ProjectPage_page;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.Dimension;
 
 import static gazeta.components.PageElement.LoadPageAndVerify;
+import static junit.framework.Assert.assertTrue;
+import com.automation.remarks.video.annotations.Video;
+//import com.automation.remarks.video.junit.VideoRule;
+import com.automation.remarks.junit.VideoRule;
+
 
 /** ProjectPage_test */
 
@@ -34,6 +36,19 @@ public class ProjectPage_test extends Settings{
             LoadPageAndVerify(item[1]);
             System.out.println(item[1]);
         }
+    }
+
+
+
+    @Rule
+    public VideoRule videoRule = new VideoRule();
+
+    @Test
+    @Video(name = "second_test")
+    public void videoTest() throws Exception {
+        browser.get("https://www.google.ru/");
+        Thread.sleep(3000);
+        assertTrue(false);
     }
 
 

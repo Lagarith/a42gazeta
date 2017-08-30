@@ -14,6 +14,7 @@ import static gazeta.components.PageElement.*;
 
 
 
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class NewsPage_test extends Settings{
 
@@ -33,6 +34,13 @@ public class NewsPage_test extends Settings{
         for (String[] item:data) {
             LoadPageAndVerify(item[1]);
         }
+    }
+
+
+
+    @Test
+    public void b_abcdefg() throws Exception {
+
     }
 
 

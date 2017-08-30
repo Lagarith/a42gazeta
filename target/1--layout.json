@@ -4,8 +4,8 @@
   "report" : {
     "nodes" : [ {
       "name" : "Check Все главные новости дня – Газета Кемерова layout",
-      "status" : "error",
-      "time" : 1500012717391,
+      "status" : "info",
+      "time" : 1500539204810,
       "includedTags" : [ "desktop" ],
       "excludedTags" : [ ],
       "sections" : [ {
@@ -15,7 +15,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 31
             },
             "name" : "visible",
@@ -23,7 +23,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 32
             },
             "name" : "centered horizontally inside container",
@@ -31,7 +31,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 33
             },
             "name" : "width 970 to 980 px",
@@ -39,7 +39,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 34
             },
             "name" : "height 80 to 90 px",
@@ -47,7 +47,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 35
             },
             "name" : "below header_banner-1 15 to 25 px",
@@ -55,7 +55,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 36
             },
             "name" : "above header_banner-2 5 to 15 px",
@@ -69,7 +69,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 40
             },
             "name" : "visible",
@@ -77,7 +77,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 41
             },
             "name" : "centered horizontally inside body",
@@ -85,7 +85,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 42
             },
             "name" : "width 980 to 1024 px",
@@ -96,7 +96,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 45
             },
             "name" : "visible",
@@ -104,7 +104,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 46
             },
             "name" : "inside container 22 px left",
@@ -112,7 +112,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 47
             },
             "name" : "height 310 to 330 px",
@@ -120,7 +120,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 48
             },
             "name" : "width 720 to 740 px",
@@ -131,7 +131,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 51
             },
             "name" : "visible",
@@ -139,7 +139,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 52
             },
             "name" : "width 230 px",
@@ -147,7 +147,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 53
             },
             "name" : "height 240 to 260 px",
@@ -158,7 +158,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 56
             },
             "name" : "visible",
@@ -166,7 +166,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 57
             },
             "name" : "left-of news-item-3 15 to 25 px",
@@ -174,7 +174,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 58
             },
             "name" : "right-of news-item-1 15 to 25 px",
@@ -182,7 +182,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 59
             },
             "name" : "above news-item-5 15 to 25 px",
@@ -190,7 +190,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 60
             },
             "name" : "width 230 px",
@@ -198,7 +198,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 61
             },
             "name" : "height 240 to 260 px",
@@ -209,7 +209,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 64
             },
             "name" : "visible",
@@ -217,7 +217,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 65
             },
             "name" : "width 230 px",
@@ -225,7 +225,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 66
             },
             "name" : "height 240 to 260 px",
@@ -236,7 +236,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 69
             },
             "name" : "visible",
@@ -244,7 +244,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 70
             },
             "name" : "width 230 px",
@@ -252,7 +252,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 71
             },
             "name" : "height 240 to 260 px",
@@ -263,7 +263,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 74
             },
             "name" : "visible",
@@ -271,7 +271,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 75
             },
             "name" : "below news-item-2 15 to 25 px",
@@ -279,19 +279,18 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 76
             },
             "name" : "width 230 px",
             "highlight" : [ "news-item-5" ]
           }, {
-            "status" : "error",
+            "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 77
             },
             "name" : "height 240 to 260 px",
-            "errors" : [ "\"news-item-5\" height is 280px which is not in range of 240 to 260px" ],
             "highlight" : [ "news-item-5" ]
           } ]
         }, {
@@ -299,7 +298,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 80
             },
             "name" : "below news-item-6 25 to 35 px",
@@ -307,7 +306,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 81
             },
             "name" : "height 35 to 45 px",
@@ -318,7 +317,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 84
             },
             "name" : "visible",
@@ -326,7 +325,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 85
             },
             "name" : "inside container 22 px right",
@@ -334,7 +333,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 86
             },
             "name" : "right-of news-main-item 15 to 25 px",
@@ -342,7 +341,7 @@
           }, {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 87
             },
             "name" : "width 220 to 230 px",
@@ -353,7 +352,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 90
             },
             "name" : "visible",
@@ -364,7 +363,7 @@
           "specs" : [ {
             "status" : "info",
             "place" : {
-              "filePath" : "specs/news_List.spec",
+              "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 93
             },
             "name" : "visible",
@@ -374,10 +373,10 @@
       } ],
       "objects" : {
         "container" : {
-          "area" : [ 156, 0, 1024, 3645 ]
+          "area" : [ 156, 0, 1024, 3625 ]
         },
         "slider" : {
-          "area" : [ 178, 1984, 730, 311 ]
+          "area" : [ 178, 1944, 730, 311 ]
         },
         "side-bar" : {
           "area" : [ 928, 380, 230, 1310 ]
@@ -401,16 +400,16 @@
           "area" : [ 178, 420, 730, 320 ]
         },
         "news-item-4" : {
-          "area" : [ 178, 1050, 230, 260 ]
+          "area" : [ 178, 1050, 230, 240 ]
         },
         "news-item-5" : {
-          "area" : [ 428, 1050, 230, 280 ]
+          "area" : [ 428, 1050, 230, 260 ]
         },
         "news-item-6" : {
-          "area" : [ 428, 1630, 230, 260 ]
+          "area" : [ 428, 1610, 230, 240 ]
         },
         "show-more_button" : {
-          "area" : [ 178, 1920, 730, 39 ]
+          "area" : [ 178, 1880, 730, 39 ]
         },
         "news-item-1" : {
           "area" : [ 178, 770, 230, 260 ]
@@ -419,7 +418,7 @@
           "area" : [ 428, 770, 230, 260 ]
         },
         "news-item-3" : {
-          "area" : [ 678, 770, 230, 240 ]
+          "area" : [ 678, 770, 230, 260 ]
         }
       },
       "screenshot" : "layout-1-screenshot.png",
