@@ -4,8 +4,8 @@
   "report" : {
     "nodes" : [ {
       "name" : "Check Все главные новости дня – Газета Кемерова layout",
-      "status" : "info",
-      "time" : 1500539204810,
+      "status" : "error",
+      "time" : 1504604536306,
       "includedTags" : [ "desktop" ],
       "excludedTags" : [ ],
       "sections" : [ {
@@ -296,12 +296,13 @@
         }, {
           "name" : "show-more_button",
           "specs" : [ {
-            "status" : "info",
+            "status" : "error",
             "place" : {
               "filePath" : "C:\\tests\\a42gazeta\\src\\test\\resources\\specs\\news_List.spec",
               "lineNumber" : 80
             },
             "name" : "below news-item-6 25 to 35 px",
+            "errors" : [ "\"show-more_button\" is 50px below \"news-item-6\" which is not in range of 25 to 35px" ],
             "highlight" : [ "show-more_button", "news-item-6" ]
           }, {
             "status" : "info",
@@ -373,10 +374,10 @@
       } ],
       "objects" : {
         "container" : {
-          "area" : [ 156, 0, 1024, 3625 ]
+          "area" : [ 156, 0, 1024, 3675 ]
         },
         "slider" : {
-          "area" : [ 178, 1944, 730, 311 ]
+          "area" : [ 178, 1964, 730, 311 ]
         },
         "side-bar" : {
           "area" : [ 928, 380, 230, 1310 ]
@@ -400,7 +401,7 @@
           "area" : [ 178, 420, 730, 320 ]
         },
         "news-item-4" : {
-          "area" : [ 178, 1050, 230, 240 ]
+          "area" : [ 178, 1050, 230, 260 ]
         },
         "news-item-5" : {
           "area" : [ 428, 1050, 230, 260 ]
@@ -409,7 +410,7 @@
           "area" : [ 428, 1610, 230, 240 ]
         },
         "show-more_button" : {
-          "area" : [ 178, 1880, 730, 39 ]
+          "area" : [ 178, 1900, 730, 39 ]
         },
         "news-item-1" : {
           "area" : [ 178, 770, 230, 260 ]
