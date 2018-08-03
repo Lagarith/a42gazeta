@@ -90,4 +90,26 @@ public class Locators extends Settings {
             '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^',
             '_', '`', '{', '|', '}', '~'
     ));
+
+    static final String[] Homeurl_list = {
+            "http://atwinta.ru/services/web-dev",
+            "http://atwinta.ru/services/adaptive",
+            "http://atwinta.ru/services/services",
+            "http://atwinta.ru/services/technical-task-and-prototypes",
+            "http://atwinta.ru/services/web-design",
+            "http://atwinta.ru/services/mobile",
+            "http://atwinta.ru/services/mobile-design",
+            "http://atwinta.ru/services/apps-for-smart-tv",
+            "http://atwinta.ru/services/support",
+            "http://atwinta.ru/services/context",
+            "http://atwinta.ru/services/seo",
+            "http://atwinta.ru/services/smm",
+            "http://atwinta.ru/services/promoting-business-in-vkontakte",
+            "http://atwinta.ru/services/promoting-business-in-instagram",
+            "http://atwinta.ru/portfolio",
+            "http://atwinta.ru/portfolio/more/kpd",
+            "http://atwinta.ru/portfolio/more/bolshoe-tv",
+            "http://atwinta.ru/portfolio/more/sibir.tv"
+    };
+
 }

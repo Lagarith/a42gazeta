@@ -1,13 +1,15 @@
 gazeta\tests\ProjectsList_test.class
 gazeta\components\PageElement.class
-gazeta\tests\HomePage_test.class
 gazeta\tests\ProjectPage_test.class
+gazeta\Helpers.class
 gazeta\tests\PhotoReportPage_test.class
 gazeta\pages\ProjectPage_page.class
 Helpers\Settings$1.class
 gazeta\pages\ConfList_page.class
 gazeta\tests\AuthorsList_test.class
 gazeta\tests\ArticlePage_test.class
+gazeta\CSVUtils.class
+gazeta\HomePage_test.class
 Helpers\Settings.class
 gazeta\pages\ArticlePage_page.class
 gazeta\tests\NewsPage_test.class
@@ -27,6 +29,7 @@ gazeta\pages\HomePage_page.class
 gazeta\pages\PhotoReportPage_page.class
 gazeta\pages\NewsPage_page.class
 gazeta\tests\ConfList_test.class
+gazeta\parse_url.class
 gazeta\tests\ArticleList_test.class
 Helpers\Locators.class
 gazeta\tests\AuthorsPage_test.class

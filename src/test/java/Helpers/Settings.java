@@ -33,10 +33,11 @@ import javax.mail.internet.*;
 
 public class Settings {
 
-    protected static WebDriver browser;
+    public static WebDriver browser;
 
 
     protected static void SetBrowserFirefox() throws Exception {
+
         File appDir = new File(System.getProperty("user.dir"));
 
         DesiredCapabilities caps = DesiredCapabilities.firefox();
@@ -60,30 +61,42 @@ public class Settings {
 
         browser = new FirefoxDriver(profile);
         System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-//        browser.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//      browser.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
     }
 
 
     protected static void SetBrowserChrome() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "user.dir/chromedriver.exe");
-        browser = new ChromeDriver();
+
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        DesiredCapabilities caps = DesiredCapabilities.chrome();
+        LoggingPreferences logPrefs = new LoggingPreferences();
+        logPrefs.enable(LogType.BROWSER, Level.ALL);
+        caps.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
+        browser = new ChromeDriver(caps);
+
     }
 
 
 
     protected static void Take_screenshot(String file_name) throws Exception {
+
         System.out.println(file_name);
         File scrFile = ((TakesScreenshot)browser).getScreenshotAs(OutputType.FILE);
 
         FileUtils.copyFile(scrFile, new File(file_name + ".jpg"));
+
     }
 
     protected static void delete_screenshot(String FILE_PATH) throws Exception {
+
         File file = new File(FILE_PATH + ".jpg");
         file.delete();
+
     }
 
     public static void sendmail() {
+
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.socketFactory.port", "465");
@@ -126,6 +139,7 @@ public class Settings {
         }
 
     public static void getSomehing() throws Exception {
+
         String response = "";
         BufferedInputStream buffer=null;
         HttpURLConnection connection=null;
@@ -142,14 +156,17 @@ public class Settings {
         }
         System.out.println(response);
 //        return response;
+
     }
 
 
 
     @Before
     public void beforeTest() throws Exception {
+
         System.setProperty("galen.config", "C:\\tests\\a42gazeta\\galen.config");
         GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
+
     }
 
     @After
@@ -158,13 +175,19 @@ public class Settings {
 
     @Rule
     public TestRule printTests = new TestWatcher() {
+
         protected void starting(Description description) {
+
             System.out.println("  StartTest: " + description.getMethodName());
+
         }
 
         protected void finished(Description description) {
+
             System.out.println("  FinishTest: " + description.getMethodName());
+
         }
+
     };
 
 }
